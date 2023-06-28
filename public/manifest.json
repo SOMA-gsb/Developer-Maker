@@ -1,24 +1,25 @@
 {
-  "manifest_version": 3,
-  "name": "Developer Maker",
+  "short_name": "Developer Maker",
+  "name": "Developer Maker Chrome Extension",
   "description": "Improve Algorithm Ability",
-  "version": "1.0",
+  "version": "1.0.0",
+  "manifest_version": 3,
   "icons": {
     "16": "images/16.png",
     "32": "images/32.png",
     "48": "images/48.png",
     "128": "images/128.png"
   },
+  "permissions": ["storage"],
   "action": {
     "default_icon": "images/32.png",
     "default_title": "Developer Maker",
-    "default_popup": "popup.html"
+    "default_popup": "index.html"
   },
-  "permissions": ["storage"],
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["scripts/inject.js"]
+      "matches": ["https://www.acmicpc.net/problem/*"],
+      "js": ["inject.js"]
     }
   ]
 }
