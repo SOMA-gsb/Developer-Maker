@@ -1,0 +1,12 @@
+{
+  "short_name": "Developer Maker",
+  "name": "Developer Maker Chrome Extension",
+  "description": "Improve Algorithm Ability",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Developer Maker",
+    "default_popup": "index.html"
+  }
+}
