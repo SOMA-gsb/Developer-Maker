@@ -1,6 +1,6 @@
 /*global chrome*/
 import { useState } from 'react';
-// import './Login.css'
+import './Login.css'
 
 function Login({onLoginChange}) {
     const [enterEamil, setEnterEmail] = useState('');
@@ -15,14 +15,10 @@ function Login({onLoginChange}) {
 
     function submitHandler(event) {
         event.preventDefault();
-        chrome.storage.local.get("loginCheck", (res) => {
-            console.log(res);
-        })
         const data = {
             email: enterEamil,
             pw: enterPassword
         };
-        console.log(data);
         
         chrome.storage.local.set({
             loginCheck: true
