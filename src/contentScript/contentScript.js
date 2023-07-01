@@ -1,4 +1,7 @@
 import Recommend from './components/Recommend';
 import Timer from './components/Timer';
-Recommend();
-Timer();
+
+if (document.getElementById("favorite_button")) {
+    Recommend();
+    Timer();
+}
