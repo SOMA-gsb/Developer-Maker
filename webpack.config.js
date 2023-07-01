@@ -7,7 +7,7 @@ module.exports = {
     devtool: 'cheap-module-source-map',
     entry: {
         popup: path.resolve('src/popup/popup.js'),
-        //contentScript: path.resolve('src/contentScript/contentScript.js')
+        contentScript: path.resolve('src/contentScript/contentScript.js')
     },
     module: {
         rules: [
@@ -41,7 +41,7 @@ module.exports = {
         })
     ],
     resolve: {
-        extensions: ['js', '.jsx']
+        extensions: ['.js', '.jsx']
     },
     output: {
         filename: '[name].js',

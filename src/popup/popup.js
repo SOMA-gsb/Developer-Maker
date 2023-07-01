@@ -1,7 +1,6 @@
 /*global chrome*/
 import ReactDOM from 'react-dom';
 import { useEffect, useState } from 'react';
-// import './App.css';
 import Login from './components/Login.js';
 import Menu from './components/Menu.js'
 
@@ -26,7 +25,6 @@ function App() {
   );
 }
 
-// export default App;
 const root = document.createElement('div')
 document.body.appendChild(root)
 ReactDOM.render(<App/>, root)
