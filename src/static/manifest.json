@@ -19,7 +19,8 @@
   "content_scripts": [
     {
       "matches": ["https://www.acmicpc.net/problem/*"],
-      "js": ["contentScript.js"]
+      "js": ["contentScript.js"],
+      "css": ["contentScript.css"]
     }
   ]
 }

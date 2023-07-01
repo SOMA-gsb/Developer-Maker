@@ -1,5 +1,5 @@
-import Recommend from './components/Recommend';
-import Timer from './components/Timer';
+import Recommend from './components/recommend/Recommend';
+import Timer from './components/timer/Timer';
 
 if (document.getElementById("favorite_button")) {
     Recommend();
