@@ -1,6 +1,6 @@
 function Button(name, id, caret = true, classNm = "") {
     return (
-        `<button type="button" class="btn btn-default gsb-dropdown-toggle ${id} ${classNm}" id="${id}-button" data-toggle="gsb-dropdown" href="#">
+        `<button type="button" class="btn btn-default gsb-dropdown-toggle ${id} ${classNm}" id="${id}-button" data-toggle="gsb-dropdown" href="#" ${caret ? "" : "style='display: none'"}>
             <span class=${id} id="${id}-text">
                 ${name}
             </span>

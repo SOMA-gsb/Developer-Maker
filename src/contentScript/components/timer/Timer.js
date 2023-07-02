@@ -1,6 +1,5 @@
 import Button from "../common/Button";
 import TimeSet from "./TimeSet";
-import TimerMenu from "./TimerMenu";
 
 function Timer() {
     document.querySelector('.btn-group').insertAdjacentHTML('afterbegin', Button("타이머", "timer"))
@@ -19,13 +18,6 @@ function Timer() {
         if (event.target.classList.contains('timer') == false) {
             timerSet.style.display = "none";
         }
-    })
-
-    TimerMenu();
-    document.getElementById('timer-set').addEventListener('submit', (event) => {
-        event.preventDefault();
-        //TimerMenu();
-        console.log(timerFrm.hour.value);
     })
 }
 

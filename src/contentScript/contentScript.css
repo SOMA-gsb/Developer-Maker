@@ -44,4 +44,18 @@
 
 #rest-time-button {
     width: 157px;
+    pointer-events: none;
+}
+
+#timer-stop-button {
+    width: 77px;
+    color: white;
+    font-weight: bold;
+    background-color: #90da57;
+}
+
+#timer-terminate-button {
+    color: white;
+    font-weight: bold;
+    background-color: #FF7E55;
 }

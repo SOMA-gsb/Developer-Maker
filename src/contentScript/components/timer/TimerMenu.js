@@ -1,10 +1,21 @@
-import Button from "../common/Button";
+/* global chrome */
+import RestTime from "./RestTime";
+import StopTimer from "./StopTimer";
+import TermTimer from "./TermTimer";
 
 function TimerMenu() {
-    const container = document.querySelector('.btn-group');
-    container.insertAdjacentHTML('afterbegin', Button("종료", "timer-terminate", false, 'timer-group'));
-    container.insertAdjacentHTML('afterbegin', Button("일시정지", "timer-stop", false, 'timer-group'));
-    container.insertAdjacentHTML('afterbegin', Button("남은 시간", "rest-time", false, 'timer-group'));
+    TermTimer();
+    StopTimer();
+    RestTime();
+
+    chrome.storage.local.get(['timer', 'isRunning'], (res) => {
+        if (!(res.timer == 0 && res.isRunning == false)) {
+            const timerGroup = document.getElementsByClassName('timer-group');
+            for (let i = 0; i < timerGroup.length; ++i) {
+                timerGroup[i].style.display = 'block';
+            }
+        }
+    })
 }
 
 export default TimerMenu;
