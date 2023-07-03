@@ -1,0 +1,61 @@
+#timer-set {
+    width: 205px;
+    right: 204px;
+    text-align: center;
+}
+
+.timer-elem {
+    border: 1px solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 15px;
+    width: 38px;
+    height: 30px;
+}
+
+.timer-elem:focus {
+    outline: none;
+}
+
+#timer-start {
+    width: 135px;
+    height: 32px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    background: #5897c9;
+    border-radius: 15px !important;
+    overflow: hidden;
+    border: none;
+}
+
+#timer-start:focus {
+    background: #8cb1ce;
+}
+
+.timer-group {
+    top: -40px;
+    right: -283px;
+}
+
+#rest-time-button {
+    width: 157px;
+    pointer-events: none;
+}
+
+#timer-stop-button {
+    width: 77px;
+    color: white;
+    font-weight: bold;
+    background-color: #90da57;
+}
+
+#timer-terminate-button {
+    color: white;
+    font-weight: bold;
+    background-color: #FF7E55;
+}
