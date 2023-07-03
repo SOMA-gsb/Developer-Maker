@@ -1,12 +1,15 @@
 import logo from "./임시로고.png";
 import "./App.css";
+import { Routes, Route } from "react-router-dom";
+import { Error, Register } from ".";
 
 function App() {
 	return (
 		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-			</header>
+			<Routes className="page">
+				<Route path="/register" element={<Register />} />
+				<Route path="*" element={<Error errorno={404} />} />
+			</Routes>
 		</div>
 	);
 }
