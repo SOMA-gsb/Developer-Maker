@@ -1,4 +1,3 @@
-import logo from "./임시로고.png";
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import { Error, Register } from ".";
