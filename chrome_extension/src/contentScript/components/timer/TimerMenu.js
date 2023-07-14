@@ -8,11 +8,20 @@ function TimerMenu() {
     StopTimer();
     RestTime();
 
-    chrome.storage.local.get(['timer', 'isRunning'], (res) => {
-        if (!(res.timer == 0 && res.isRunning == false)) {
-            const timerGroup = document.getElementsByClassName('timer-group');
+    const probNum = window.location.href.split('/').reverse()[0];
+    const timerGroup = document.getElementsByClassName('timer-group');
+
+    chrome.storage.local.get([`${probNum}Timer`, `${probNum}isRunning`], (res) => {
+        if (`${probNum}Timer` in res && !(res[`${probNum}Timer`] == false && res[`${probNum}isRunning`] == false)) {
             for (let i = 0; i < timerGroup.length; ++i) {
                 timerGroup[i].style.display = 'block';
+                console.log("block");
+            }
+        }
+        else {
+            for (let i = 0; i < timerGroup.length; ++i) {
+                timerGroup[i].style.display = 'none';
+                console.log("none");
             }
         }
     })

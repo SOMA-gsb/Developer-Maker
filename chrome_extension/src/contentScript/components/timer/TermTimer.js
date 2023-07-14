@@ -1,9 +1,11 @@
 import Button from "../common/Button";
 
 function terminateTimer() {
+    const probNum = window.location.href.split('/').reverse()[0];
+
     chrome.storage.local.set({
-        timer: 0,
-        isRunning: false,
+        [`${probNum}Timer`]: false,
+        [`${probNum}isRunning`]: false,
     }, () => {
         const timerGroup = document.getElementsByClassName('timer-group');
         for (let i = 0; i < timerGroup.length; ++i) {

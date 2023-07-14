@@ -15,17 +15,20 @@ function TimeSet() {
         const hour = document.getElementById('hour').value;
         const minute = document.getElementById('minute').value;
         const second = document.getElementById('second').value;
+        let probNum = window.location.href.split('/').reverse()[0];
 
         chrome.storage.local.set({
-            timer: 0,
-            isRunning: true,
-            timeOption: Number(hour) * 3600 + Number(minute) * 60 + Number(second)
+            [`${probNum}Timer`]: true,
+            [`${probNum}TimeOption`]: Number(hour) * 3600 + Number(minute) * 60 + Number(second),
+            [`${probNum}Start`]: Date.now(),
+            [`${probNum}isRunning`]: true,
+            [`${probNum}Stop`]: Date.now(),
         })
         
         document.getElementById('timer-set').style.display = "none";
         
         const restTime = document.getElementById("rest-time-text");
-        restTime.innerHTML = `남은\u00A0시간\u00A0\u00A0\u00A0<b>${hour.padStart(2, '0')}:${minute.padStart(2, '0')}:${second.padStart(2, '0')}</b>`;
+        restTime.innerHTML = `남은&nbsp시간&nbsp&nbsp&nbsp<b>${hour.padStart(2, '0')}:${minute.padStart(2, '0')}:${second.padStart(2, '0')}</b>`;
 
         const timerStopTxt = document.getElementById('timer-stop-text');
         timerStopTxt.innerHTML = '일시정지';
