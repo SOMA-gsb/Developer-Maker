@@ -2,8 +2,11 @@ import Recommend from './components/recommend/Recommend';
 import Timer from './components/timer/Timer';
 import TimerMenu from './components/timer/TimerMenu';
 
-if (document.getElementById("favorite_button")) {
-    Recommend();
-    Timer();
-    TimerMenu();
-}
+chrome.storage.local.get(['active'], (res) => {
+    if (!'active' in res || (res.active && document.getElementById("favorite_button"))) {
+        Recommend();
+        Timer();
+        TimerMenu();
+    }
+    console.log(res.active);
+})

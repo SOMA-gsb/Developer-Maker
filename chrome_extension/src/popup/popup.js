@@ -17,7 +17,6 @@ function App() {
     })
   })
 
-  console.log("hi")
   return (
     <div className="App">
       {loginCheck ? <Menu /> : <Login onLoginChange={loginChangeHandler} />}
