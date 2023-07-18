@@ -91,3 +91,9 @@ html {
 .timerSet {
     cursor: pointer;
 }
+
+#popup-hr {
+    width: 95%;
+    color: #333;
+    size: 1
+}
