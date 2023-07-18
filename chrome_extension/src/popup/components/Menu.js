@@ -11,8 +11,7 @@ function Menu() {
     useEffect(() => {
         chrome.storage.local.get(['active'], (res) => {
             const activeBox = document.getElementById('switch');
-            //activeBox.checked = 'active' in res && res.active == false ? true : false;
-            activeBox.checked = !res.active;
+            activeBox.checked = 'active' in res && !res.active;
         })
     })
 
@@ -36,12 +35,12 @@ function Menu() {
             <div>
                 <h2 id="timer-title">Timer Setting</h2>
                 <div className="timer-menu">
-                    <input type="radio" id="manual" name="timer-set" value="manual" checked />
-                    <label htmlFor="setTimer">Timer starts when you press the button</label>
+                    <input type="radio" id="setTimer" name="timer-set" value="setTimer" className='timerSet' checked />
+                    <label htmlFor="setTimer" className='timerSet'>Timer starts when you press the button</label>
                 </div>
                 <div className="timer-menu">
-                    <input type="radio" id="auto" name="timer-set" value="auto" />
-                    <label htmlFor="autoTimer">Timer starts automatically when you enter the problem page</label>
+                    <input type="radio" id="autoTimer" name="timer-set" value="autoTimer" className='timerSet' />
+                    <label htmlFor="autoTimer" className='timerSet'>Timer starts automatically when you enter the problem page</label>
                 </div>
             </div>
         </>
