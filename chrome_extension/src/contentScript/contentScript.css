@@ -11,7 +11,7 @@
     border-left: none;
     display: inline-block;
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 8px;
     width: 38px;
     height: 30px;
 }
@@ -31,10 +31,11 @@
     border-radius: 15px !important;
     overflow: hidden;
     border: none;
+    margin-bottom: 5px;
 }
 
-#timer-start:focus {
-    background: #8cb1ce;
+#timer-start:hover {
+    background: #5b7a96;
 }
 
 .timer-group {
