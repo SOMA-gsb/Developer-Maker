@@ -6,8 +6,6 @@ function TimerSet() {
     useEffect(() => {
         chrome.storage.local.get(['timerSet'], (res) => {
             if (res.timerSet == 'autoTimer') setTimerSet('autoTimer');
-            console.log("use " + timerSet);
-            
             document.getElementById(timerSet).defaultChecked = true;
         })
     })

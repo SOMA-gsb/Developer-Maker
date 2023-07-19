@@ -8,6 +8,13 @@ function TimerMenu() {
     StopTimer();
     RestTime();
 
+    const timerMenu = document.getElementsByClassName('timer-group');
+    if (document.getElementById("lang-select-button") == null) {
+        for (var i = 0; i < timerMenu.length; ++i) {
+            timerMenu[i].style.right = '-21rem';
+        }
+    }
+
     const probNum = window.location.href.split('/').reverse()[0];
     const timerGroup = document.getElementsByClassName('timer-group');
 

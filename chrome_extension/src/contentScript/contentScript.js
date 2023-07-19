@@ -8,5 +8,4 @@ chrome.storage.local.get(['active'], (res) => {
         Timer();
         TimerMenu();
     }
-    console.log(res.active);
 })
