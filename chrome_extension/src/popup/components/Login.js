@@ -21,7 +21,8 @@ function Login({onLoginChange}) {
         };
         
         chrome.storage.local.set({
-            loginCheck: true
+            loginCheck: true,
+            active: true,
         })
         onLoginChange();
     }
