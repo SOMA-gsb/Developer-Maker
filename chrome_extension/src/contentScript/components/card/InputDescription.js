@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function InputDescription() {
+function InputDescription(props) {
     const [description, setDescription] = useState('');
     const [formState, setFormState] = useState('ready');
 
@@ -19,8 +19,8 @@ function InputDescription() {
         setFormState('loading')
         setTimeout(() => {
             setFormState('ready')
-            
-        }, 2000)
+            props.setSubMenuState('loading')
+        }, 1000)
     }
 
     const fieldDisalbed = formState === 'loading' ? true : false

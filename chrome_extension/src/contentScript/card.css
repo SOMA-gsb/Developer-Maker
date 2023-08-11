@@ -59,13 +59,20 @@
 
 /* tag */
 .sub-menus {
-    background-color: white;
     width: 25rem;
     height: 18rem;
     border: 0.2rem solid black;
     border-top: none;
     background-color: #FFF1F1;
     text-align: center;
+}
+
+#tag-loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    align-items: center;
 }
 
 #description-textarea {
@@ -137,4 +144,8 @@
 #tag-predict-btn:disabled {
     background-color: #a7c1e0;
     cursor: default
+}
+
+#loading-img {
+    height: 8rem;
 }

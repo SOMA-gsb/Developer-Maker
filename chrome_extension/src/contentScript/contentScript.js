@@ -17,7 +17,7 @@ function App() {
         <div id='card'>
             <Title onBar={handleTitleBarClick} menuVisible={menuVisible} />
             {menuVisible && <Menu setSubMenuState={setSubMenuState} />}
-            {menuVisible && <SubMenu subMenuState={subMenuState} />}
+            {menuVisible && <SubMenu setSubMenuState={setSubMenuState} subMenuState={subMenuState} />}
         </div>
     )
 }
