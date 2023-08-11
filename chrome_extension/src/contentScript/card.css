@@ -75,6 +75,11 @@
     align-items: center;
 }
 
+#tag-result {
+    text-align: left;
+    padding: 0.7rem 1rem;
+}
+
 #description-textarea {
     resize: none;
     width: 23.5rem;
@@ -148,4 +153,22 @@
 
 #loading-img {
     height: 8rem;
+}
+
+#prediction-title-box {
+    height: 3rem;
+    width: 1.5rem;
+    float: left;
+    background-color: #F14141;
+    margin: 0;
+}
+
+#prediction-title {
+    height: 3rem;
+    width: 16rem;
+    background-color: white;
+    float: left;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.4rem 0rem 0rem 0.4rem;
 }

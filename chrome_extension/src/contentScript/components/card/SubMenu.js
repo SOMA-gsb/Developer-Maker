@@ -1,5 +1,6 @@
 import InputDescription from "./InputDescription";
 import TagLoading from "./TagLoading";
+import TagResult from "./TagResult";
 
 function SubMenu(props) {
     if (props.subMenuState === '') return null
@@ -9,7 +10,7 @@ function SubMenu(props) {
         <>
             {props.subMenuState === 'input' && <InputDescription setSubMenuState={props.setSubMenuState} />}
             {props.subMenuState === 'loading' && <TagLoading setSubMenuState={props.setSubMenuState} />}
-            {props.subMenuState === 'result' && <InputDescription />}
+            {props.subMenuState === 'result' && <TagResult />}
         </>
     )
 }
