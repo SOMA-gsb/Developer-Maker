@@ -11,7 +11,7 @@
 
 #title {
     text-align: right;
-    background-color: white;
+    background-color: #e0e0e0;
     width: 25rem;
     height: 3rem;
     border: 0.2rem solid black;
@@ -55,4 +55,86 @@
 
 #probs-btn {
     margin: 0.3rem 2rem;
+}
+
+/* tag */
+.sub-menus {
+    background-color: white;
+    width: 25rem;
+    height: 18rem;
+    border: 0.2rem solid black;
+    border-top: none;
+    background-color: #FFF1F1;
+    text-align: center;
+}
+
+#description-textarea {
+    resize: none;
+    width: 23.5rem;
+    height: 12.5rem;
+    margin-top: 0.7rem;
+    padding: 0.5rem;
+    border: solid 0.2rem #E2E2E2;
+    border-radius: 0.75rem !important;
+}
+
+#description-textarea:focus {
+    outline: solid 0.2rem #a7a7a7;
+}
+
+#description-textarea::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+#description-textarea::-webkit-scrollbar-thumb {
+    background-color: #b7b7b7;
+    border-radius: 1rem;
+    width: 0.5rem;
+}
+
+#description-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.description-btns {
+    background-color: #EF7A7A;
+    color: white;
+    border: none;
+    border-radius: 0.75rem ! important;
+    height: 3.5rem;
+    width: 8rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+}
+
+.description-btns:hover {
+    background-color: #e79d9d;
+    cursor: pointer;
+}
+
+.description-btns:disabled {
+    background-color: #e79d9d;
+    cursor: default;
+}
+
+#erase-btn {
+    margin: 0rem 3.2rem 0rem 0.3rem;
+    width: 5rem;
+}
+
+#tag-predict-btn {
+    background-color: #6F94BF;
+    width: 7rem;
+}
+
+#tag-predict-btn:hover {
+    background-color: #a7c1e0;
+    cursor: pointer;
+}
+
+#tag-predict-btn:disabled {
+    background-color: #a7c1e0;
+    cursor: default
 }

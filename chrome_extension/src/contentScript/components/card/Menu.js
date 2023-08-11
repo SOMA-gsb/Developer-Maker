@@ -2,10 +2,10 @@ import Recommend from "./Recommend";
 import Tag from "./Tag";
 import Timer from "./Timer";
 
-function Menu() {
+function Menu(props) {
     return (
         <div id='menu'>
-            <Tag />
+            <Tag setSubMenuState={props.setSubMenuState} />
             <Recommend />
             <Timer />
         </div>

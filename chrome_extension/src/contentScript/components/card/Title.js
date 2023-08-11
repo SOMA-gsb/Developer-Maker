@@ -1,9 +1,7 @@
-import { useState } from 'react';
 import close from './images/close.svg'
 import open from './images/open.svg'
 
-function Title() {
-    const [isOpen, setIsOpen] = useState(true);
+function Title(props) {
     let isDown = false, offset, div;
 
     const setOffset = (e) => {
@@ -28,16 +26,10 @@ function Title() {
         isDown = false;
     }
 
-    const handleBarClick = () => {
-        const menu = document.getElementById('menu');
-        menu.style.display = isOpen ? 'none' : 'block';
-        setIsOpen(!isOpen);
-    }
-
     return (
         <div id='title' onMouseDown={setOffset} onMouseMove={moveDiv} onMouseUp={setPosition}>
             <span>Developer Maker</span>
-            <img id='title-bar' src={isOpen ? close : open} onClick={handleBarClick} />
+            <img id='title-bar' src={props.menuVisible ? close : open} onClick={props.onBar} />
         </div>
     )
 }
