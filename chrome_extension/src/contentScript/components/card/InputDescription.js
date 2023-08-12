@@ -19,7 +19,7 @@ function InputDescription(props) {
         setFormState('loading')
         setTimeout(() => {
             setFormState('ready')
-            props.setSubMenuState('loading')
+            props.setSubMenuState('tagLoading')
         }, 1000)
     }
 

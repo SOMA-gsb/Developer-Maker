@@ -2,7 +2,7 @@ import loading from './images/loading.svg'
 
 function TagLoading(props) {
     setTimeout(() => {
-        props.setSubMenuState('result')
+        props.setSubMenuState('tagResult')
     }, 1000);
 
     return (

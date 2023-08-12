@@ -8,9 +8,9 @@ function SubMenu(props) {
     console.log(props.subMenuState)
     return (
         <>
-            {props.subMenuState === 'input' && <InputDescription setSubMenuState={props.setSubMenuState} />}
-            {props.subMenuState === 'loading' && <TagLoading setSubMenuState={props.setSubMenuState} />}
-            {props.subMenuState === 'result' && <TagResult />}
+            {props.subMenuState === 'tagInput' && <InputDescription setSubMenuState={props.setSubMenuState} />}
+            {props.subMenuState === 'tagLoading' && <TagLoading setSubMenuState={props.setSubMenuState} />}
+            {props.subMenuState === 'tagResult' && <TagResult />}
         </>
     )
 }
