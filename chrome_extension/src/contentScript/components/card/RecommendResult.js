@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import ResultTitle from './ResultTitle';
 
 function Result(props) {
     return (
@@ -22,8 +23,7 @@ function RecommendResult() {
     
     return (
         <div className='sub-menus result-container recommend-menus'>
-            <div className='result-title-box' id='recommend-title-box'></div>
-            <div className='result-title-name' id='recommend-title-name'>Recommended Problems</div>
+            <ResultTitle boxId='recommend-title-box' titleId='recommend-title-name' title='Recommended Problems' />
             <ul id='recommend-ul'>
                 {result.map((item, index) => {
                     return <Result result={item} last={index === result.length - 1} key={index} />
