@@ -185,7 +185,7 @@
 
 #tag-result-ol li::before {
     content: counter(steps);
-    margin-right: 0.2rem;
+    margin-right: 0.5rem;
     background: #EA6F6F;
     color: white;
     width: 1.6em;

@@ -24,7 +24,7 @@ function TagResult() {
             <div id='prediction-title'>Tag Prediction Results</div>
             <ol id='tag-result-ol'>
                 {result.map((item, index) => {
-                    return <Result result={item} first={index === 0} last={index === result.length - 1} />
+                    return <Result result={item} first={index === 0} last={index === result.length - 1} key={index} />
                 })}
             </ol>
         </div>
