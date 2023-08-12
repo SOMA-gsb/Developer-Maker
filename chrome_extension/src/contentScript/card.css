@@ -156,19 +156,62 @@
 }
 
 #prediction-title-box {
-    height: 3rem;
+    height: 2.7rem;
     width: 1.5rem;
     float: left;
     background-color: #F14141;
-    margin: 0;
 }
 
 #prediction-title {
-    height: 3rem;
+    height: 2.7rem;
     width: 16rem;
     background-color: white;
     float: left;
     font-weight: bold;
-    margin: 0;
     padding: 0.4rem 0rem 0rem 0.4rem;
+    margin-bottom: 0.8rem;
+}
+
+#tag-result-ol {
+    list-style: none;
+    counter-increment: step;
+    clear: both;
+    font-weight: bold;
+}
+
+#tag-result-ol li {
+    counter-increment: steps;
+}
+
+#tag-result-ol li::before {
+    content: counter(steps);
+    margin-right: 0.2rem;
+    background: #EA6F6F;
+    color: white;
+    width: 1.6em;
+    height: 1.6em;
+    border-radius: 50%;
+    display: inline-grid;
+    place-items: center;
+}
+
+.result-title {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.result-percentage {
+    display: inline-block;
+    float: right;
+    font-weight: bold;
+}
+
+#first-percentage {
+    color: #F14141;
+}
+
+.result-hr {
+    border: 0rem;
+    border-top: 0.2rem dashed #C8C8C8;
+    margin: 0.6rem 0rem;
 }
