@@ -19,9 +19,9 @@ function TagResult() {
     ])
 
     return (
-        <div className='sub-menus' id='tag-result'>
-            <div id='prediction-title-box'></div>
-            <div id='prediction-title'>Tag Prediction Results</div>
+        <div className='sub-menus result-container'>
+            <div className='result-title-box'></div>
+            <div className='result-title-name'>Tag Prediction Results</div>
             <ol id='tag-result-ol'>
                 {result.map((item, index) => {
                     return <Result result={item} first={index === 0} last={index === result.length - 1} key={index} />

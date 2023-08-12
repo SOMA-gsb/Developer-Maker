@@ -6,8 +6,8 @@ function TagLoading(props) {
     }, 1000);
 
     return (
-        <div className='sub-menus' id='tag-loading'>
-            <img id='loading-img' src={loading} />
+        <div className='sub-menus loading'>
+            <img className='loading-img' src={loading} />
             <span>Predicting tags . . .</span>
         </div>
     )

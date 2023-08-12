@@ -6,7 +6,7 @@ function Menu(props) {
     return (
         <div id='menu'>
             <Tag setSubMenuState={props.setSubMenuState} />
-            <Recommend />
+            <Recommend setSubMenuState={props.setSubMenuState} />
             <Timer />
         </div>
     )

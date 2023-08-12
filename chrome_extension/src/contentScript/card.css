@@ -67,7 +67,7 @@
     text-align: center;
 }
 
-#tag-loading {
+.loading {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -75,7 +75,7 @@
     align-items: center;
 }
 
-#tag-result {
+.result-container {
     text-align: left;
     padding: 0.7rem 1rem;
 }
@@ -151,18 +151,18 @@
     cursor: default
 }
 
-#loading-img {
+.loading-img {
     height: 8rem;
 }
 
-#prediction-title-box {
+.result-title-box {
     height: 2.7rem;
     width: 1.5rem;
     float: left;
     background-color: #F14141;
 }
 
-#prediction-title {
+.result-title-name {
     height: 2.7rem;
     width: 16rem;
     background-color: white;
@@ -214,4 +214,46 @@
     border: 0rem;
     border-top: 0.2rem dashed #C8C8C8;
     margin: 0.6rem 0rem;
+}
+
+.recommend-menus {
+    background-color: #FFFAE8;
+}
+
+#recommend-title-box {
+    background-color: #FFBF1B;
+}
+
+#recommend-title-name {
+    width: 18rem;
+}
+
+#recommend-ul {
+    list-style-type: none;
+    font-weight: bold;
+    clear: both;
+}
+
+.recommend-number {
+    float: left;
+    margin-right: 0.3rem;
+    background-color: #FDD56D;
+    width: 6.3rem;
+    color: white;
+    border-radius: 0.7rem !important;
+    text-align: center;
+    text-decoration: none;
+    outline: none
+}
+
+.recommend-number:hover, .recommend-number:active {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ffb800;
+    cursor: pointer;
+}
+
+.faLink {
+    height: 1.3rem;
+    color: #23C115;
 }
