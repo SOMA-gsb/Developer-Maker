@@ -257,3 +257,51 @@
     height: 1.3rem;
     color: #23C115;
 }
+
+.timer-container {
+    height: 7.8rem;
+    background-color: #F0FAEF;
+    font-weight: bold;
+}
+
+.timer-setting {
+    border: 0.239rem solid #333;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    display: inline-block;
+    width: 3.7rem;
+    height: 2.2rem;
+    background-color: #f0faef;
+    text-align: center;
+}
+
+.timer-division {
+    font-size: 1.9rem;
+    margin: 0rem 0.5rem;
+}
+
+.timer-btns {
+    height: 2.4rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px !important;
+    border: none;
+}
+
+#timer-start {
+    width: 6.5rem;
+    background: #FF9F2D;
+    margin: 0.7rem 0rem 0rem 0.7rem;
+}
+
+#stop-watch-btn {
+    width: 13.5rem;
+    background: #54C459;
+    margin-bottom: 0.7rem;
+}
+
+#timer-hr {
+    border-top: 0.16rem solid #939393;
+    margin: 0.6rem 0rem;
+}

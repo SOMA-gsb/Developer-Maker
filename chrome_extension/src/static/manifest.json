@@ -20,7 +20,7 @@
     {
       "matches": ["https://www.acmicpc.net/problem/*"],
       "js": ["contentScript.js"],
-      "css": ["contentScript.css"]
+      "css": ["card.css"]
     }
   ],
   "background": {

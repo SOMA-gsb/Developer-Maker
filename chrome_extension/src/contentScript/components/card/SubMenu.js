@@ -3,6 +3,7 @@ import RecommendLoading from "./RecommendLoading";
 import RecommendResult from "./RecommendResult";
 import TagLoading from "./TagLoading";
 import TagResult from "./TagResult";
+import TimerSettting from "./TimerSetting";
 
 function SubMenu(props) {
     if (props.subMenuState === '') return null
@@ -15,6 +16,7 @@ function SubMenu(props) {
             {props.subMenuState === 'tagResult' && <TagResult />}
             {props.subMenuState === 'recommendLoading' && <RecommendLoading setSubMenuState={props.setSubMenuState} />}
             {props.subMenuState === 'recommendResult' && <RecommendResult />}
+            {props.subMenuState === 'timerSetting' && <TimerSettting />}
         </>
     )
 }

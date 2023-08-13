@@ -44,7 +44,7 @@ module.exports = {
                     to: path.resolve('dist'),
                 },
                 {
-                    from: path.resolve('src/contentScript/contentScript.css'),
+                    from: path.resolve('src/contentScript/card.css'),
                     to: path.resolve('dist'),
                 }
             ]
