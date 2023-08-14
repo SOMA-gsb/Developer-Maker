@@ -1,10 +1,10 @@
 import Timer from './Timer';
 import StopWatch from './StopWatch';
 
-function TimerSettting() {
+function TimerSettting(props) {
     return (
         <div className='sub-menus timer-container'>
-            <Timer />
+            <Timer setTimerVisible={props.setTimerVisible} />
             <hr id='timer-hr' />
             <StopWatch />
         </div>

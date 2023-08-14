@@ -8,7 +8,6 @@ import TimerSettting from "./TimerSetting";
 function SubMenu(props) {
     if (props.subMenuState === '') return null
 
-    console.log(props.subMenuState)
     return (
         <>
             {props.subMenuState === 'tagInput' && <InputDescription setSubMenuState={props.setSubMenuState} />}
@@ -16,7 +15,7 @@ function SubMenu(props) {
             {props.subMenuState === 'tagResult' && <TagResult />}
             {props.subMenuState === 'recommendLoading' && <RecommendLoading setSubMenuState={props.setSubMenuState} />}
             {props.subMenuState === 'recommendResult' && <RecommendResult />}
-            {props.subMenuState === 'timerSetting' && <TimerSettting />}
+            {props.subMenuState === 'timerSetting' && <TimerSettting setTimerVisible={props.setTimerVisible} />}
         </>
     )
 }

@@ -9,14 +9,25 @@ function TimerInput(props) {
     )
 }
 
-function Timer() {
+function Timer(props) {
     const [hour, setHour] = useState(0);
     const [minute, setMinute] = useState(0);
     const [second, setSecond] = useState(0);
+    const probNum = window.location.href.split('/').reverse()[0];
 
     const handleTimerStartClick = (event) => {
         event.preventDefault();
-        console.log(hour, minute, second);
+        console.log('timer start');
+        console.log(hour, minute, second)
+        props.setTimerVisible(true);
+        chrome.storage.local.set({
+            [`${probNum}Timer`]: true,
+            [`${probNum}TimerOption`]: Number(hour) * 3600 + Number(minute) * 60 + Number(second),
+            [`${probNum}TimerRunning`]: true,
+            [`${probNum}TimerStart`]: Date.now(),
+            [`${probNum}TimerStop`]: Date.now(),
+            [`${probNum}Time`]: [hour, minute, second],
+        })
     }
 
     return (

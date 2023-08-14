@@ -42,6 +42,7 @@
     border: 0.2rem solid black;
     border-top: none;
     text-align: center;
+    clear: both;
 }
 
 .buttons {
@@ -304,4 +305,40 @@
 #timer-hr {
     border-top: 0.16rem solid #939393;
     margin: 0.6rem 0rem;
+}
+
+#timer-bar {
+    background-color: white;
+    width: 25rem;
+    height: 3rem;
+    border: 0.2rem solid black;
+    font-size: 1.2rem;
+    border-top: none;
+    line-height: 3rem;
+}
+
+#timer-time {
+    float: left;
+    text-align: center;
+    width: 12.15rem;
+}
+
+#stop-btn {
+    font-weight: bold;
+    background-color: #90DA57;
+    float: left;
+    color: white;
+    text-align: center;
+    height: 2.8rem;
+    width: 4.67rem;
+}
+
+#terminate-btn {
+    font-weight: bold;
+    background-color: #FF7E55;
+    float: left;
+    color: white;
+    text-align: center;
+    height: 2.8rem;
+    width: 7.86rem;
 }
