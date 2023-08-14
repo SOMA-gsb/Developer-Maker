@@ -13,7 +13,7 @@ function TerminateTimer(props) {
     }
 
     return (
-        <div id='terminate-btn' onClick={handleTerminateClick}>TERMINATE</div>
+        <div className='timer-bar-btns' id='terminate-btn' onClick={handleTerminateClick}>TERMINATE</div>
     )
 }
 

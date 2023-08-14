@@ -3,11 +3,18 @@ import TagBtn from "./tag/TagBtn";
 import TimerBtn from "./timer/TimerBtn";
 
 function Menu(props) {
+    const handleMenuClick = () => {
+        if(props.subMenuState !== '') {
+            props.setMenuState('')
+            props.setSubMenuState('')
+        }
+    }
+
     return (
-        <div id='menu'>
-            <TagBtn setSubMenuState={props.setSubMenuState} />
-            <RecommendBtn setSubMenuState={props.setSubMenuState} />
-            <TimerBtn setSubMenuState={props.setSubMenuState} />
+        <div id='menu' onClick={handleMenuClick}>
+            <TagBtn setSubMenuState={props.setSubMenuState} menuState={props.menuState} setMenuState={props.setMenuState} />
+            <RecommendBtn setSubMenuState={props.setSubMenuState} menuState={props.menuState} setMenuState={props.setMenuState} />
+            <TimerBtn setSubMenuState={props.setSubMenuState} menuState={props.menuState} setMenuState={props.setMenuState} />
         </div>
     )
 }

@@ -48,6 +48,7 @@
 .buttons {
     display: inline-block;
     width: 5.3rem;
+    cursor: pointer;
 }
 
 .button-imgs {
@@ -323,22 +324,21 @@
     width: 12.15rem;
 }
 
-#stop-btn {
+.timer-bar-btns {
     font-weight: bold;
-    background-color: #90DA57;
     float: left;
     color: white;
     text-align: center;
     height: 2.8rem;
+    cursor: pointer;
+}
+
+#stop-btn {
+    background-color: #90DA57;
     width: 4.67rem;
 }
 
 #terminate-btn {
-    font-weight: bold;
     background-color: #FF7E55;
-    float: left;
-    color: white;
-    text-align: center;
-    height: 2.8rem;
     width: 7.86rem;
 }

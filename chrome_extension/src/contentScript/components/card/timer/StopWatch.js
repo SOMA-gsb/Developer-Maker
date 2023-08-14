@@ -4,6 +4,8 @@ function StopWatch(props) {
     const handleStopWatchClick = (event) => {
         event.preventDefault();
         props.setTimerVisible(true);
+        props.setSubMenuState('');
+        props.setMenuState('');
         props.setTimerTitle('PAST TIME');
         chrome.storage.local.set({
             [`${probNum}Stopwatch`]: true,

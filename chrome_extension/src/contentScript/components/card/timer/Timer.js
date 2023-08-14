@@ -18,6 +18,8 @@ function Timer(props) {
     const handleTimerStartClick = (event) => {
         event.preventDefault();
         props.setTimerVisible(true);
+        props.setSubMenuState('');
+        props.setMenuState('');
         props.setTimerTitle('REST TIME');
         chrome.storage.local.set({
             [`${probNum}Timer`]: true,

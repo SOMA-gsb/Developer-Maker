@@ -22,7 +22,7 @@ function StopTimer(props) {
     }
 
     return (
-        <div id='stop-btn' onClick={handleStopClick}>{props.stopState ? 'START' : 'STOP'}</div>
+        <div className='timer-bar-btns' id='stop-btn' onClick={handleStopClick}>{props.stopState ? 'START' : 'STOP'}</div>
     )
 }
 

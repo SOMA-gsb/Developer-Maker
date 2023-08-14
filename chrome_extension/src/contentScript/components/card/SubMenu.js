@@ -15,7 +15,7 @@ function SubMenu(props) {
             {props.subMenuState === 'tagResult' && <TagResult />}
             {props.subMenuState === 'recommendLoading' && <RecommendLoading setSubMenuState={props.setSubMenuState} />}
             {props.subMenuState === 'recommendResult' && <RecommendResult />}
-            {props.subMenuState === 'timerSetting' && <TimerSettting setTimerVisible={props.setTimerVisible} setTimerTitle={props.setTimerTitle} />}
+            {props.subMenuState === 'timerSetting' && <TimerSettting setSubMenuState={props.setSubMenuState} setTimerVisible={props.setTimerVisible} setTimerTitle={props.setTimerTitle} setMenuState={props.setMenuState} menuState={props.menuState} />}
         </>
     )
 }

@@ -7,6 +7,7 @@ import TimerBar from './components/card/timer/TimerBar'
 import './card.css'
 
 function App() {
+    const [menuState, setMenuState] = useState('');
     const [subMenuState, setSubMenuState] = useState('');
     const [menuVisible, setMenuVisible] = useState(true);
     const [timerVisible, setTimerVisible] = useState(false);
@@ -37,9 +38,18 @@ function App() {
         <div id='card'>
             <Title onBar={handleTitleBarClick} menuVisible={menuVisible} />
             {timerVisible && <TimerBar setTimerVisible={setTimerVisible} stopState={stopState} setStopState={setStopState} timerTitle={timerTitle} />}
-            {menuVisible && <Menu setSubMenuState={setSubMenuState} />}
             {menuVisible &&
+                <Menu
+                    setMenuState={setMenuState}
+                    menuState={menuState}
+                    setSubMenuState={setSubMenuState}
+                    subMenuState={subMenuState}
+                />
+            }
+            {menuVisible && setSubMenuState != '' &&
                 <SubMenu
+                    setMenuState={setMenuState}
+                    menuState={menuState}
                     setSubMenuState={setSubMenuState}
                     subMenuState={subMenuState}
                     setTimerVisible={setTimerVisible}
