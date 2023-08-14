@@ -21,12 +21,12 @@ function App() {
     useEffect(() => {
         chrome.storage.local.get([`${probNum}Timer`, `${probNum}TimerRunning`, `${probNum}TimerStart`, `${probNum}TimerOption`, `${probNum}Stopwatch`, `${probNum}StopwatchRunning`], (res) => {
             if (res[`${probNum}Timer`] && (Math.floor((Date.now() - res[`${probNum}TimerStart`]) / 1000) < res[`${probNum}TimerOption`])) {
-                if (res[`${probNum}TimerRunning`]) setStopState(false);
+                if (!res[`${probNum}TimerRunning`]) setStopState(true);
                 setTimerVisible(true);
                 setTimerTitle('REST TIME')
             }
             else if (res[`${probNum}Stopwatch`]) {
-                if (res[`${probNum}StopwatchRunning`]) setStopState(false);
+                if (!res[`${probNum}StopwatchRunning`]) setStopState(true);
                 setTimerVisible(true);
                 setTimerTitle('PAST TIME')
             }
