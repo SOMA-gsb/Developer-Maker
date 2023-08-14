@@ -5,7 +5,7 @@ import TerminateTimer from "./TerminateTimer";
 function TimerBar(props) {
     return (
         <div id='timer-bar'>
-            <RestTime />
+            <RestTime timerTitle={props.timerTitle} />
             <StopTimer stopState={props.stopState} setStopState={props.setStopState} />
             <TerminateTimer setTimerVisible={props.setTimerVisible} />
         </div>

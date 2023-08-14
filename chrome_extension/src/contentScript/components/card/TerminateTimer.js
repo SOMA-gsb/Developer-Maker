@@ -6,6 +6,8 @@ function TerminateTimer(props) {
         chrome.storage.local.set({
             [`${probNum}Timer`]: false,
             [`${probNum}TimerRunning`]: false,
+            [`${probNum}Stopwatch`]: false,
+            [`${probNum}StopwatchRunning`]: false,
         })
         props.setTimerVisible(false);
     }

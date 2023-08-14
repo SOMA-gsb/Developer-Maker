@@ -11,6 +11,7 @@ function App() {
     const [menuVisible, setMenuVisible] = useState(true);
     const [timerVisible, setTimerVisible] = useState(false);
     const [stopState, setStopState] = useState(false);
+    const [timerTitle, setTimerTitle] = useState('');
 
     const handleTitleBarClick = () => {
         setMenuVisible(!menuVisible)
@@ -18,10 +19,16 @@ function App() {
 
     const probNum = window.location.href.split('/').reverse()[0];
     useEffect(() => {
-        chrome.storage.local.get([`${probNum}Timer`, `${probNum}TimerRunning`, `${probNum}TimerStart`, `${probNum}TimerOption`], (res) => {
-            if (`${probNum}Timer` in res && res[`${probNum}Timer`] && (Math.floor((Date.now() - res[`${probNum}TimerStart`]) / 1000) < res[`${probNum}TimerOption`])) {
-                if (!res[`${probNum}TimerRunning`]) setStopState(true);
+        chrome.storage.local.get([`${probNum}Timer`, `${probNum}TimerRunning`, `${probNum}TimerStart`, `${probNum}TimerOption`, `${probNum}Stopwatch`, `${probNum}StopwatchRunning`], (res) => {
+            if (res[`${probNum}Timer`] && (Math.floor((Date.now() - res[`${probNum}TimerStart`]) / 1000) < res[`${probNum}TimerOption`])) {
+                if (res[`${probNum}TimerRunning`]) setStopState(false);
                 setTimerVisible(true);
+                setTimerTitle('REST TIME')
+            }
+            else if (res[`${probNum}Stopwatch`]) {
+                if (res[`${probNum}StopwatchRunning`]) setStopState(false);
+                setTimerVisible(true);
+                setTimerTitle('PAST TIME')
             }
         })
     }, [])
@@ -29,9 +36,16 @@ function App() {
     return (
         <div id='card'>
             <Title onBar={handleTitleBarClick} menuVisible={menuVisible} />
-            {timerVisible && <TimerBar setTimerVisible={setTimerVisible} stopState={stopState} setStopState={setStopState}  />}
+            {timerVisible && <TimerBar setTimerVisible={setTimerVisible} stopState={stopState} setStopState={setStopState} timerTitle={timerTitle} />}
             {menuVisible && <Menu setSubMenuState={setSubMenuState} />}
-            {menuVisible && <SubMenu setSubMenuState={setSubMenuState} subMenuState={subMenuState} setTimerVisible={setTimerVisible} />}
+            {menuVisible &&
+                <SubMenu
+                    setSubMenuState={setSubMenuState}
+                    subMenuState={subMenuState}
+                    setTimerVisible={setTimerVisible}
+                    setTimerTitle={setTimerTitle}
+                />
+            }
         </div>
     )
 }

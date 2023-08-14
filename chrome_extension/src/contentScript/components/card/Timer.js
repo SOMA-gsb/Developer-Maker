@@ -17,11 +17,11 @@ function Timer(props) {
 
     const handleTimerStartClick = (event) => {
         event.preventDefault();
-        console.log('timer start');
-        console.log(hour, minute, second)
         props.setTimerVisible(true);
+        props.setTimerTitle('REST TIME');
         chrome.storage.local.set({
             [`${probNum}Timer`]: true,
+            [`${probNum}Stopwatch`]: false,
             [`${probNum}TimerOption`]: Number(hour) * 3600 + Number(minute) * 60 + Number(second),
             [`${probNum}TimerRunning`]: true,
             [`${probNum}TimerStart`]: Date.now(),
