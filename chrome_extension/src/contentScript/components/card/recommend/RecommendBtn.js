@@ -1,4 +1,4 @@
-import recommend from './images/recommend.svg'
+import recommend from '../images/recommend.svg'
 
 function Recommend(props) {
     return (

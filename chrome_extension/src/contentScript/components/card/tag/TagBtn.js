@@ -1,4 +1,4 @@
-import tag from './images/tag.svg'
+import tag from '../images/tag.svg'
 
 function Tag(props) {
     return (

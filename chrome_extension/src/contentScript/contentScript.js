@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import Title from './components/card/Title'
 import Menu from './components/card/Menu'
 import SubMenu from './components/card/SubMenu'
-import TimerBar from './components/card/TimerBar'
+import TimerBar from './components/card/timer/TimerBar'
 import './card.css'
 
 function App() {

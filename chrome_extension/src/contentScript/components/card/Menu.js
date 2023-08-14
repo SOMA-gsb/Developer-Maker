@@ -1,6 +1,6 @@
-import RecommendBtn from "./RecommendBtn";
-import TagBtn from "./TagBtn";
-import TimerBtn from "./TimerBtn";
+import RecommendBtn from "./recommend/RecommendBtn";
+import TagBtn from "./tag/TagBtn";
+import TimerBtn from "./timer/TimerBtn";
 
 function Menu(props) {
     return (

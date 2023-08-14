@@ -1,9 +1,9 @@
-import InputDescription from "./InputDescription";
-import RecommendLoading from "./RecommendLoading";
-import RecommendResult from "./RecommendResult";
-import TagLoading from "./TagLoading";
-import TagResult from "./TagResult";
-import TimerSettting from "./TimerSetting";
+import InputDescription from "./tag/InputDescription";
+import RecommendLoading from "./recommend/RecommendLoading";
+import RecommendResult from "./recommend/RecommendResult";
+import TagLoading from "./tag/TagLoading";
+import TagResult from "./tag/TagResult";
+import TimerSettting from "./timer/TimerSetting";
 
 function SubMenu(props) {
     if (props.subMenuState === '') return null

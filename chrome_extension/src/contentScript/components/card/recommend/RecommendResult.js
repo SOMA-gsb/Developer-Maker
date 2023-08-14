@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-import ResultTitle from './ResultTitle';
+import ResultTitle from '../common/ResultTitle';
 
 function Result(props) {
     return (

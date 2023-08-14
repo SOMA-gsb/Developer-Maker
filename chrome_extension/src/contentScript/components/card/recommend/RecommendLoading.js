@@ -1,4 +1,4 @@
-import loading from './images/loading.svg'
+import loading from '../images/loading.svg'
 
 function RecommendLoading(props) {
     setTimeout(() => {

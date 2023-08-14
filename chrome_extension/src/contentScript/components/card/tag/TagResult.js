@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ResultTitle from './ResultTitle';
+import ResultTitle from '../common/ResultTitle';
 
 function Result(props) {
     return (

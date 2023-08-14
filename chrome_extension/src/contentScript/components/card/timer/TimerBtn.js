@@ -1,4 +1,4 @@
-import timer from './images/timer.svg'
+import timer from '../images/timer.svg'
 
 function Timer(props) {
     return (
