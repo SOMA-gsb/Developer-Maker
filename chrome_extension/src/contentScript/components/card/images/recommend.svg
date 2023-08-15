@@ -1,6 +1,8 @@
 <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <circle cx="23.5" cy="23.5" r="23" fill="#FFEFB6" stroke="black"/>
 <rect x="6" y="5" width="35" height="35" fill="url(#pattern0)"/>
+<path d="M23.5 5C21.5 5 19.866 6.5 16 6.5C12.134 6.5 11 5.55228 11 5C11.5 4.5 12.5 3.5 16 3.5C19.866 3.5 23.5 4.44772 23.5 5Z" fill="#FFEFB6"/>
+<path d="M23.5 5C25.5 5 27.134 6.5 31 6.5C34.866 6.5 36 5.55228 36 5C35.5 4.5 34.3587 3.5 31 3.5C27.134 3.5 23.5 4.44772 23.5 5Z" fill="#FFEFB6"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_220_12" transform="scale(0.00195312)"/>
