@@ -39,6 +39,23 @@ function RestTime(props) {
                             })
                         }
                     }
+                    else {
+                        let notification = new Notification('Developer Maker', {
+                            body: `Prob ${probNum}. Time is up!`,
+                            icon: '../images/timer.svg',
+                        })
+                        notification.onclick = () => {
+                            window.focus();
+                            notification.close();
+                        }
+
+                        setTimeState([0, 0, 0]);
+                        chrome.storage.local.set({
+                            [`${probNum}Time`]: [0, 0, 0],
+                            [`${probNum}Timer`]: false,
+                            [`${probNum}TimerRunning`]: false,
+                        })
+                    }
                 }
                 else if (res[`${probNum}Stopwatch`] && res[`${probNum}StopwatchRunning`]) {
                     let diffTime = Math.floor((Date.now() - res[`${probNum}StopwatchStart`]) / 1000);

@@ -10,7 +10,7 @@
     "128": "images/128.png"
   },
   "manifest_version": 3,
-  "permissions": ["storage", "alarms"],
+  "permissions": ["storage", "alarms", "notifications"],
   "action": {
     "default_icon": "images/32.png",
     "default_title": "Developer Maker",
