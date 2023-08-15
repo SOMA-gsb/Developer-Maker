@@ -18,7 +18,10 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.acmicpc.net/problem/*"],
+      "matches": [
+        "https://www.acmicpc.net/problem/*",
+        "https://codeforces.com/problemset/problem/*"
+      ],
       "js": ["contentScript.js"],
       "css": ["card.css"]
     }

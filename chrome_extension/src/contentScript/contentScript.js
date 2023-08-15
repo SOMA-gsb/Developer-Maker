@@ -7,6 +7,11 @@ import TimerBar from './components/card/timer/TimerBar'
 import './card.css'
 
 function App() {
+    const url = window.location.href;
+    const bojRegExp = /https:\/\/www.acmicpc.net\/problem\/[0-9]+/;
+    const codforceRegExp = /https:\/\/codeforces.com\/problemset\/problem\/[0-9]+\/[A-Z]+/;
+    if(!bojRegExp.test(url) && !codforceRegExp.test(url)) return null;
+
     const [menuState, setMenuState] = useState('');
     const [subMenuState, setSubMenuState] = useState('');
     const [menuVisible, setMenuVisible] = useState(true);
