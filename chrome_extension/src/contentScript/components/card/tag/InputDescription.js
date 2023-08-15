@@ -5,7 +5,9 @@ function InputDescription(props) {
     const [formState, setFormState] = useState('ready');
 
     const descriptionCopy = () => {
-        var x = document.getElementById('problem_description').textContent.split(/\n| |\t/).filter(item=>item).join(' ').split('$');
+        var x = props.curPage == 'boj' ? document.getElementById('problem_description') : document.getElementsByClassName('problem-statement').item(0).childNodes.item(1);
+
+        x = x.textContent.split(/\n| |\t/).filter(item=>item).join(' ').split('$');
         const len = x.length;
         for (var i = 1; i < len; i += 2) {
             x[i-1] = ' ' + x[i - 1].split(' ').slice(0, -1).join(' ') + ' ';

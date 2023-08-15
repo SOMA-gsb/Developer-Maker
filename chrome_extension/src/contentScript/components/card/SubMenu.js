@@ -10,7 +10,7 @@ function SubMenu(props) {
 
     return (
         <>
-            {props.subMenuState === 'tagInput' && <InputDescription subMenuState={props.subMenuState} setSubMenuState={props.setSubMenuState} />}
+            {props.subMenuState === 'tagInput' && <InputDescription subMenuState={props.subMenuState} setSubMenuState={props.setSubMenuState} curPage={props.curPage} />}
             {props.subMenuState === 'tagLoading' && <TagLoading subMenuState={props.subMenuState} setSubMenuState={props.setSubMenuState} />}
             {props.subMenuState === 'tagResult' && <TagResult />}
             {props.subMenuState === 'recommendLoading' && <RecommendLoading subMenuState={props.subMenuState} setSubMenuState={props.setSubMenuState} />}

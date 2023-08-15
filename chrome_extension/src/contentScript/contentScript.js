@@ -7,10 +7,16 @@ import TimerBar from './components/card/timer/TimerBar'
 import './card.css'
 
 function App() {
-    const url = window.location.href;
-    const bojRegExp = /https:\/\/www.acmicpc.net\/problem\/[0-9]+/;
-    const codforceRegExp = /https:\/\/codeforces.com\/problemset\/problem\/[0-9]+\/[A-Z]+/;
-    if(!bojRegExp.test(url) && !codforceRegExp.test(url)) return null;
+    const [curPage, setCurPage] = useState('boj');
+    useEffect(() => {
+        const url = window.location.href;
+        const bojRegExp = /https:\/\/www.acmicpc.net\/problem\/[0-9]+/;
+        const codeforceRegExp = /https:\/\/codeforces.com\/problemset\/problem\/[0-9]+\/[A-Z]+/;
+        if (!bojRegExp.test(url)) {
+            setCurPage('codeforce');
+            if (!codeforceRegExp.test(url)) return null;
+        }
+    }, [])
 
     const [menuState, setMenuState] = useState('');
     const [subMenuState, setSubMenuState] = useState('');
@@ -53,6 +59,7 @@ function App() {
             }
             {menuVisible && setSubMenuState != '' &&
                 <SubMenu
+                    curPage={curPage}
                     setMenuState={setMenuState}
                     menuState={menuState}
                     setSubMenuState={setSubMenuState}
