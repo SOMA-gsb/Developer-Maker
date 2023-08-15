@@ -4,12 +4,11 @@ import TimerBtn from "./timer/TimerBtn";
 
 function Menu(props) {
     const handleMenuClick = () => {
-        if(props.subMenuState !== '') {
+        if(props.menuState !== '') {
             props.setMenuState('')
-            props.setSubMenuState('')
         }
     }
-
+    
     return (
         <div id='menu' onClick={handleMenuClick}>
             <TagBtn setSubMenuState={props.setSubMenuState} menuState={props.menuState} setMenuState={props.setMenuState} />

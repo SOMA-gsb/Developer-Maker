@@ -72,7 +72,7 @@ function RestTime(props) {
 
     return (
         <div id='timer-time'>
-            <span>{props.timerTitle}&nbsp;</span>
+            <span id='rest-time-title'>{props.timerTitle}&nbsp;&nbsp;</span>
             <b>{`${timeState[0]}`.padStart(2, '0')}:{`${timeState[1]}`.padStart(2, '0')}:{`${timeState[2]}`.padStart(2, '0')}</b>
         </div>
     )

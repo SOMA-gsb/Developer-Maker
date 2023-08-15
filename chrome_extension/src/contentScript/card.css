@@ -51,6 +51,11 @@
     cursor: pointer;
 }
 
+.buttons:hover {
+    border-radius: 2.8rem !important;
+    box-shadow: #646464 0rem 0.1rem 0.4rem 0rem;
+}
+
 .button-imgs {
     width: 5.3rem !important;
 }
@@ -324,12 +329,17 @@
     width: 12.15rem;
 }
 
+#rest-time-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
 .timer-bar-btns {
     font-weight: bold;
     float: left;
     color: white;
     text-align: center;
-    height: 2.8rem;
+    height: 2.85rem;
     cursor: pointer;
 }
 
