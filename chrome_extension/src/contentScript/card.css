@@ -283,6 +283,10 @@
     text-align: center;
 }
 
+.timer-setting:focus {
+    outline: none;
+}
+
 .timer-division {
     font-size: 1.9rem;
     margin: 0rem 0.5rem;
@@ -327,6 +331,7 @@
     float: left;
     text-align: center;
     width: 12.15rem;
+    cursor: default;
 }
 
 #rest-time-title {
@@ -341,6 +346,10 @@
     text-align: center;
     height: 2.85rem;
     cursor: pointer;
+}
+
+.timer-bar-btns:hover {
+    box-shadow: inset #515151a6 0rem 0.1rem 0.4rem 0rem;
 }
 
 #stop-btn {
