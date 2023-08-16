@@ -57,6 +57,10 @@
     box-shadow: #646464 0rem 0.1rem 0.4rem 0rem;
 }
 
+.buttons:active {
+    box-shadow: none;
+}
+
 .button-imgs {
     width: 5.3rem !important;
 }
@@ -308,14 +312,22 @@
 
 #timer-start {
     width: 6.5rem;
-    background: #FF9F2D;
+    background-color: #FF9F2D;
     margin: 0.7rem 0rem 0rem 0.7rem;
+}
+
+#timer-start:hover {
+    background-color: #ffbe70;
 }
 
 #stop-watch-btn {
     width: 13.5rem;
-    background: #54C459;
+    background-color: #54C459;
     margin-bottom: 0.7rem;
+}
+
+#stop-watch-btn:hover {
+    background-color: #8ecd90;
 }
 
 #timer-hr {
