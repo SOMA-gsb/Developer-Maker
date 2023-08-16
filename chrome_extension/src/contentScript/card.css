@@ -6,20 +6,27 @@
     top: 15%;
     z-index: 2147483647;
     box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 0.5px, rgba(26, 33, 52, 0.2) 0px 2px 8px;
-    border-top-left-radius: 2.3rem !important;
+    border-top-left-radius: 23px !important;
     font-family: 'Alatsi', sans-serif;
 }
 
 #title {
     text-align: right;
     background-color: #e0e0e0;
-    width: 25rem;
-    height: 3rem;
-    border: 0.2rem solid black;
-    border-top-left-radius: 2.3rem !important;
-    font-size: 1.7rem;
-    line-height: 2.7rem;
+    width: 250px;
+    height: 30px;
+    border: 2px solid black;
+    border-top-left-radius: 23px !important;
+    font-size: 17px;
     font-family: 'Changa One', cursive;
+    position: relative;
+    line-height: 29px;
+}
+
+#title span {
+    display: block;
+    text-align: center;
+    position: relative;
 }
 
 #title:hover {
@@ -28,8 +35,11 @@
 }
 
 #title-bar {
-    margin: 0rem 1.5rem 0rem 2.2rem;
-    padding: 1.2rem 0rem 1.2rem 0rem;
+    padding: 12px 0px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 1px 15px 0px 0px;
 }
 
 #title-bar:hover {
@@ -38,9 +48,9 @@
 
 #menu {
     background-color: white;
-    width: 25rem;
-    height: 6rem;
-    border: 0.2rem solid black;
+    width: 250px;
+    height: 60px;
+    border: 2px solid black;
     border-top: none;
     text-align: center;
     clear: both;
@@ -48,13 +58,14 @@
 
 .buttons {
     display: inline-block;
-    width: 5.3rem;
+    width: 53px;
+    height: 53px;
     cursor: pointer;
 }
 
 .buttons:hover {
-    border-radius: 2.8rem !important;
-    box-shadow: #646464 0rem 0.1rem 0.4rem 0rem;
+    border-radius: 28px !important;
+    box-shadow: #646464 0px 1px 4px 0px;
 }
 
 .buttons:active {
@@ -62,18 +73,18 @@
 }
 
 .button-imgs {
-    width: 5.3rem !important;
+    width: 53px !important;
 }
 
 #probs-btn {
-    margin: 0.3rem 2rem;
+    margin: 3px 20px;
 }
 
 /* tag */
 .sub-menus {
-    width: 25rem;
-    height: 18rem;
-    border: 0.2rem solid black;
+    width: 250px;
+    height: 180px;
+    border: 2px solid black;
     border-top: none;
     background-color: #FFF1F1;
     text-align: center;
@@ -85,38 +96,41 @@
     justify-content: center;
     font-weight: bold;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 12px;
 }
 
 .result-container {
     text-align: left;
-    padding: 0.7rem 1rem;
-    font-size: 1.3rem;
+    padding: 7px 10px;
+    font-size: 13px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
-#description-textarea {
+#gsb-description-textarea {
     resize: none;
-    width: 23.5rem;
-    height: 12.5rem;
-    margin-top: 0.7rem;
-    padding: 0.5rem;
-    border: solid 0.2rem #E2E2E2;
-    border-radius: 0.75rem !important;
+    width: 235px;
+    height: 125px;
+    margin-top: 7px;
+    padding: 5px;
+    border: solid 2px #E2E2E2;
+    border-radius: 7.5px !important;
     font-family: 'Alatsi', sans-serif !important;
+    box-sizing: border-box;
 }
 
-#description-textarea:focus {
-    outline: solid 0.2rem #a7a7a7;
+#gsb-description-textarea:focus {
+    outline: solid 2px #a7a7a7;
 }
 
-#description-textarea::-webkit-scrollbar {
-    width: 0.8rem;
+#gsb-description-textarea::-webkit-scrollbar {
+    width: 8px;
 }
 
-#description-textarea::-webkit-scrollbar-thumb {
+#gsb-description-textarea::-webkit-scrollbar-thumb {
     background-color: #b7b7b7;
-    border-radius: 1rem;
-    width: 0.5rem;
+    border-radius: 10px;
+    width: 5px;
 }
 
 #description-btn-container {
@@ -128,12 +142,12 @@
     background-color: #EF7A7A;
     color: white;
     border: none;
-    border-radius: 0.75rem ! important;
-    height: 3.5rem;
-    width: 8rem;
-    font-size: 1.1rem;
+    border-radius: 7.5px ! important;
+    height: 35px;
+    width: 80px;
+    font-size: 11px;
     font-weight: bold;
-    line-height: 1.6rem;
+    line-height: 16px;
 }
 
 .description-btns:hover {
@@ -147,13 +161,13 @@
 }
 
 #erase-btn {
-    margin: 0rem 3.2rem 0rem 0.3rem;
-    width: 5rem;
+    margin: 0px 32px 0px 3px;
+    width: 50px;
 }
 
 #tag-predict-btn {
     background-color: #6F94BF;
-    width: 7rem;
+    width: 70px;
 }
 
 #tag-predict-btn:hover {
@@ -167,24 +181,24 @@
 }
 
 .loading-img {
-    height: 8rem;
+    height: 80px;
 }
 
 .result-title-box {
-    height: 2.7rem;
-    width: 1.5rem;
+    height: 27px;
+    width: 15px;
     float: left;
     background-color: #F14141;
 }
 
 .result-title-name {
-    height: 2.7rem;
-    width: 16rem;
+    height: 27px;
+    width: 160px;
     background-color: white;
     float: left;
     font-weight: bold;
-    padding: 0.4rem 0rem 0rem 0.4rem;
-    margin-bottom: 0.8rem;
+    padding: 4px 0px 0px 4px;
+    margin-bottom: 8px;
 }
 
 #tag-result-ol {
@@ -200,7 +214,7 @@
 
 #tag-result-ol li::before {
     content: counter(steps);
-    margin-right: 0.5rem;
+    margin-right: 5px;
     background: #EA6F6F;
     color: white;
     width: 1.6em;
@@ -226,13 +240,18 @@
 }
 
 .result-hr {
-    border: 0rem;
-    border-top: 0.2rem dashed #C8C8C8;
-    margin: 0.6rem 0rem;
+    border: 0px;
+    border-top: 2px dashed #C8C8C8;
+    margin: 6px 0px;
 }
 
 .recommend-menus {
     background-color: #FFFAE8;
+}
+
+.result-container.recommend-menus {
+    height: 100%;
+    padding-bottom: 10px;
 }
 
 #recommend-title-box {
@@ -240,7 +259,7 @@
 }
 
 #recommend-title-name {
-    width: 18rem;
+    width: 180px;
 }
 
 #recommend-ul {
@@ -251,11 +270,11 @@
 
 .recommend-number {
     float: left;
-    margin-right: 0.3rem;
+    margin-right: 3px;
     background-color: #FDD56D;
-    width: 6.3rem;
+    width: 63px;
     color: white;
-    border-radius: 0.7rem !important;
+    border-radius: 7px !important;
     text-align: center;
     text-decoration: none;
     outline: none
@@ -269,24 +288,24 @@
 }
 
 .faLink {
-    height: 1.3rem;
+    height: 13px;
     color: #23C115;
 }
 
 .timer-container {
-    height: 7.8rem;
+    height: 78px;
     background-color: #F0FAEF;
     font-weight: bold;
 }
 
 .timer-setting {
-    border: 0.239rem solid #333;
+    border: 2.39px solid #333;
     border-top: none;
     border-right: none;
     border-left: none;
     display: inline-block;
-    width: 3.7rem;
-    height: 2.2rem;
+    width: 37px;
+    height: 22px;
     background-color: #f0faef;
     text-align: center;
 }
@@ -296,24 +315,24 @@
 }
 
 .timer-division {
-    font-size: 1.9rem;
-    margin: 0rem 0.5rem;
+    font-size: 19px;
+    margin: 0px 5px;
 }
 
 .timer-btns {
-    height: 2.4rem;
+    height: 24px;
     color: white;
     cursor: pointer;
     border-radius: 15px !important;
     border: none;
-    font-size: 1.3rem;
+    font-size: 13px;
     font-family: 'Alatsi', sans-serif !important;
 }
 
 #timer-start {
-    width: 6.5rem;
+    width: 65px;
     background-color: #FF9F2D;
-    margin: 0.7rem 0rem 0rem 0.7rem;
+    margin: 7px 0px 0px 7px;
 }
 
 #timer-start:hover {
@@ -321,9 +340,9 @@
 }
 
 #stop-watch-btn {
-    width: 13.5rem;
+    width: 135px;
     background-color: #54C459;
-    margin-bottom: 0.7rem;
+    margin-bottom: 7px;
 }
 
 #stop-watch-btn:hover {
@@ -331,29 +350,29 @@
 }
 
 #timer-hr {
-    border-top: 0.16rem solid #939393;
-    margin: 0.6rem 0rem;
+    border-top: 1.6px solid #939393;
+    margin: 6px 0px;
 }
 
 #timer-bar {
     background-color: white;
-    width: 25rem;
-    height: 3rem;
-    border: 0.2rem solid black;
-    font-size: 1.2rem;
+    width: 250px;
+    height: 30px;
+    border: 2px solid black;
+    font-size: 12px;
     border-top: none;
-    line-height: 3rem;
+    line-height: 30px;
 }
 
 #timer-time {
     float: left;
-    text-align: center;
-    width: 12.15rem;
+    width: 50%;
+    height: 100%;
     cursor: default;
-    font-size: 1.2rem;
+    font-size: 12px;
     font-weight: bold;
-    text-align: left;
-    padding-left: 1.2rem;
+    padding-left: 0;
+    text-align: center;
 }
 
 .timer-bar-btns {
@@ -361,21 +380,21 @@
     float: left;
     color: white;
     text-align: center;
-    height: 2.85rem;
+    height: 100%;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 12px;
 }
 
 .timer-bar-btns:hover {
-    box-shadow: inset #515151a6 0rem 0.1rem 0.4rem 0rem;
+    box-shadow: inset #515151a6 0px 1px 4px 0px;
 }
 
 #stop-btn {
     background-color: #90DA57;
-    width: 4.67rem;
+    width: 20%;
 }
 
 #terminate-btn {
     background-color: #FF7E55;
-    width: 7.86rem;
+    width: 30%
 }

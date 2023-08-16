@@ -29,7 +29,7 @@ function InputDescription(props) {
 
     return (
         <div className='sub-menus'>
-            <textarea id='description-textarea' placeholder='Input description here' value={description} onChange={event => setDescription(event.target.value)} disabled={fieldDisalbed} />
+            <textarea id='gsb-description-textarea' placeholder='Input description here' value={description} onChange={event => setDescription(event.target.value)} disabled={fieldDisalbed} />
             <div id='description-btn-container'>
                 <button className='description-btns' id='dsc-copy-btn' onClick={() => setDescription(descriptionCopy())} disabled={fieldDisalbed}>Description Copy</button>
                 <button className='description-btns' id='erase-btn' onClick={() => setDescription('')} disabled={fieldDisalbed}>Erase</button>
