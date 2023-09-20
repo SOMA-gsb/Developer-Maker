@@ -7,15 +7,14 @@ import TimerBar from './components/card/timer/TimerBar'
 import './card.css'
 
 function App() {
-    const [curPage, setCurPage] = useState('boj');
+    const [curPage, setCurPage] = useState('none');
     useEffect(() => {
         const url = window.location.href;
         const bojRegExp = /https:\/\/www.acmicpc.net\/problem\/[0-9]+/;
         const codeforceRegExp = /https:\/\/codeforces.com\/problemset\/problem\/[0-9]+\/[A-Z]+/;
-        if (!bojRegExp.test(url)) {
-            setCurPage('codeforce');
-            if (!codeforceRegExp.test(url)) return null;
-        }
+        if (bojRegExp.test(url)) setCurPage('boj');
+        else if (codeforceRegExp.test(url)) setCurPage('codeforce');
+        else setCurPage('none');
     }, [])
 
     const [menuState, setMenuState] = useState('');
@@ -47,9 +46,10 @@ function App() {
 
     return (
         <div id='card'>
-            <Title onBar={handleTitleBarClick} menuVisible={menuVisible} />
-            {timerVisible && <TimerBar setTimerVisible={setTimerVisible} stopState={stopState} setStopState={setStopState} timerTitle={timerTitle} />}
-            {menuVisible &&
+            {curPage != 'none' && <Title onBar={handleTitleBarClick} menuVisible={menuVisible} />}
+            {timerVisible && curPage != 'none' &&
+                <TimerBar setTimerVisible={setTimerVisible} stopState={stopState} setStopState={setStopState} timerTitle={timerTitle} />}
+            {menuVisible && curPage != 'none' &&
                 <Menu
                     setMenuState={setMenuState}
                     menuState={menuState}
@@ -57,7 +57,7 @@ function App() {
                     subMenuState={subMenuState}
                 />
             }
-            {menuVisible && setSubMenuState != '' &&
+            {menuVisible && setSubMenuState != '' && curPage != 'none' &&
                 <SubMenu
                     curPage={curPage}
                     setMenuState={setMenuState}
