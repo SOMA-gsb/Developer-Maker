@@ -1,0 +1,43 @@
+#Navigation-bar {
+    position: relative;
+    height: 4rem;
+    background: #FFFDF9;
+    box-shadow: 0rem 0rem 0.2rem #525252;
+}
+
+#Main-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-left: 12rem;
+    margin-bottom: 0.16rem;
+}
+
+.Nav-logos {
+    height: 3rem;
+}
+
+#Nav-btns {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 12rem;
+    display: flex;
+}
+
+.Nav-btn {
+    padding-left: 2rem;
+    color: #545454;
+    padding-top: 0.9rem;
+    cursor: pointer;
+}
+
+.Nav-btn:hover {
+    font-weight: bold;
+}
+
+#User-btn {
+    margin-bottom: 0.2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+}
