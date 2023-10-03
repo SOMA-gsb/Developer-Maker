@@ -1,0 +1,32 @@
+#main-intro {
+    background-color: #FFFDF9;
+    background-image: url('../../assets/mainIntro.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    text-align: initial;
+    padding: 8vw 13vw 4vw 13vw;
+    height: auto;
+}
+
+#main-intro-title {
+    color: #404040;
+    font-weight: bold;
+    font-size: 3.2rem;
+}
+
+#main-highlight {
+    color: #268EC8;
+}
+
+#main-intro-subtitle {
+    padding: 0.3vw 0vw 10.9vw 0vw;
+    color: #A2A2A2;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+#main-SWMLogo {
+    height: 2rem;
+    padding-right: 67rem;
+}
