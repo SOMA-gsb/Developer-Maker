@@ -1,10 +1,11 @@
-import { NavBar, MainIntro } from "../components";
+import { NavBar, Intro, Footer } from "../components";
 
 function Main() {
 	return (
 		<div>
 			<NavBar />
-			<MainIntro />
+			<Intro />
+			<Footer />
 		</div>
 	);
 }

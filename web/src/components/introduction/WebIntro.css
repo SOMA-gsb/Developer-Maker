@@ -1,0 +1,13 @@
+.web-intro {
+    height: auto;
+    background-image: url('../../assets/introduction/webBackground.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100vw;
+}
+
+.web-intro-summary {
+    display: flex;
+    justify-content: center;
+    color: #545454;
+}

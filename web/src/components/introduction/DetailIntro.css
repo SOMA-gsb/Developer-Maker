@@ -1,0 +1,85 @@
+.detail-intro {
+    height: auto;
+    position: relative;
+    margin: 7vw 0vw 4vw 0vw;
+}
+
+.detail-curriculum.detail-intro {
+    min-height: 42vw;
+    height: auto;
+    background-image: url('../../assets/introduction/curriculumBackground.png');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: 100vw;
+}
+
+.detail-exam.detail-intro {
+    min-height: 37vw;
+    height: auto;
+    text-align: -webkit-right;
+    background-image: url('../../assets/introduction/examBackground.png');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: 100vw;
+}
+
+.detail-ability.detail-intro {
+    min-height: 28vw;
+    height: auto;
+    background-image: url('../../assets/introduction/abilityBackground.png');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: 100vw;
+}
+
+.detail-contents {
+    color: #404040;
+    /* position: absolute; */
+}
+
+.detail-curriculum .detail-contents {
+    min-width: 29rem;
+    text-align: initial;
+    margin: 0vw 39vw 0vw 11vw;
+}
+
+.detail-exam .detail-contents {
+    width: 30rem;
+    margin-right: 11vw;
+    text-align: end;
+}
+
+.detail-ability .detail-contents {
+    min-width: 28rem;
+    text-align: initial;
+    margin: 0vw 39vw 0vw 11vw;
+}
+
+.detail-title {
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.detail-curriculum .detail-title {
+    color: #3e7bb4;
+}
+
+.detail-exam .detail-title {
+    color: #ff8a00;
+}
+
+.detail-ability .detail-title {
+    color: #04a500;
+}
+
+.detail-subtitle {
+    font-weight: bold;
+    font-size: 3rem;
+    margin: 0.6rem 0rem 1rem 0rem;
+}
+
+.detail-content {
+    line-height: 1.6rem;
+    font-size: 1.1rem;
+}

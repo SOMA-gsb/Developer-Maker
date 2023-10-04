@@ -1,0 +1,32 @@
+.extension-intro {
+    min-height: 56vw;
+    height: auto;
+    background-image: url('../../assets/introduction/extensionBackground.png');
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-size: cover;
+}
+
+#extension-intro-contents {
+    color: #404040;
+}
+
+#extension-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#extension-content {
+    margin: 0.5vw 0vw 1.5vw 0vw;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+#extension-image {
+    width: 36vw;
+}
+
+.extension-intro-details {
+    display: flex;
+    justify-content: center;
+}

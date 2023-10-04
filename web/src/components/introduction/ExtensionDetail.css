@@ -1,0 +1,53 @@
+.extension-intro-detail {
+    background-color: #faf8f6;
+    color: #545454;
+    width: 24vw;
+    margin: 3vw 2vw;
+    height: auto;
+    display: flex;
+    min-width: 10rem;
+}
+
+.extension-tag.extension-intro-detail {
+    box-shadow: -0.3vw 0.3vw 0vw 0.1vw #9c9c9c;
+}
+
+.extension-recommend.extension-intro-detail {
+    box-shadow: 0vw 0.3vw 0vw 0.1vw #9c9c9c;
+}
+
+.extension-timer.extension-intro-detail {
+    box-shadow: 0.3vw 0.3vw 0vw 0.1vw #9c9c9c;
+}
+
+.extension-intro-box {
+    height: auto;
+    width: 1.5vw;
+}
+
+.extension-tag .extension-intro-box {
+    background-color: #ffcccc;
+}
+
+.extension-recommend .extension-intro-box {
+    background-color: #fbebb4;
+}
+
+.extension-timer .extension-intro-box {
+    background-color: #c1eabf;
+}
+
+.extension-intro-wrapper {
+    text-align: initial;
+    padding: 2vw 1.1vw 1.6vw 0.7vw;
+}
+
+.extension-intro-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding-bottom: 1rem;
+}
+
+.extension-intro-content {
+    line-height: 1.4rem;
+}
