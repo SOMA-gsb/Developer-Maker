@@ -1,14 +1,18 @@
 import './NavBar.css';
-import { Link } from "react-router-dom";
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import mainLogo from "../../assets/mainLogo.png";
 import userLogo from "../../assets/userLogo.png";
 
 function NavBar() {
     return (
         <div id="Navigation-bar">
-            <Link id="Main-btn" to="/main"><img className="Nav-logos" src={mainLogo} alt="Developer Maker" /></Link>
+            <Link id="Main-btn" to="/"><img className="Nav-logos" src={mainLogo} alt="Developer Maker" /></Link>
             <div id='Nav-btns'>
-                <div className='Nav-btn'>Curriculum</div>
+                {/* <Link to="/taglist" className='Nav-btn'>Curriculum</Link>
+                <div className='Nav-btn'>Mock Exam</div>
+                <div className='Nav-btn'>GSB</div>
+                <div id='User-btn'><img className="Nav-logos" src={userLogo} alt="userLogo"/></div> */}
+                <CustomLink to="/taglist" className='Nav-btn'>Curriculum</CustomLink>
                 <div className='Nav-btn'>Mock Exam</div>
                 <div className='Nav-btn'>GSB</div>
                 <div id='User-btn'><img className="Nav-logos" src={userLogo} alt="userLogo"/></div>
@@ -18,3 +22,12 @@ function NavBar() {
 };
 
 export default NavBar;
+
+function CustomLink({ to, children }) {
+    const match = useMatch(to);
+    const resolvedPath = useResolvedPath(to);
+    const active = match ? "active" : "";
+    return (
+        <Link className={`Nav-btn ${active}`} to={resolvedPath}>{children}</Link>
+    );
+}

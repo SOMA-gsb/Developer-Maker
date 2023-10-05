@@ -1,0 +1,36 @@
+.title-box {
+    margin: 2vw auto;
+    display: flex;
+    min-width: 37rem;
+    width: 77vw;
+    height: 11rem;
+    background: #FFFEFB;
+    box-shadow: 0rem 0rem 0.1rem 0rem gray;
+    position: relative;
+}
+
+.title-box-contents {
+    position: absolute;
+    bottom: 2rem;
+    left: 4rem;
+    text-align: left;
+}
+
+.title-box-title {
+    color: #404040;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.title-box-subtitle {
+    color: #545454;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+.title-box-icon {
+    position: absolute;
+    width: 10rem;
+    bottom: 0.2rem;
+    right: 5rem;
+}

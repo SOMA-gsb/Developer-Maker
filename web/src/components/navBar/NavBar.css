@@ -41,3 +41,22 @@
     margin-left: 1rem;
     cursor: pointer;
 }
+
+a.Nav-btn {
+    text-decoration: none;
+    outline: none;
+    padding-left: 2rem;
+    color: #545454;
+    padding-top: 0.9rem;
+    cursor: pointer;
+}
+
+a.Nav-btn:hover, a.Nav-btn:active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Nav-btn.active {
+    text-decoration: none;
+    font-weight: bold;
+}
