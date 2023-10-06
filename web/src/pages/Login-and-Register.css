@@ -1,0 +1,103 @@
+.DM-information {
+	position: sticky;
+	top: 0px;
+	height: 100vh;
+	width: 20%;
+	min-width: 30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #545454;
+}
+
+.DM-form {
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+}
+
+#DM-information-title {
+	font-size: 3rem;
+	font-weight: 1000;
+	margin-bottom: 1rem;
+	height: 30%;
+	display: flex;
+	align-items: end;
+	color: #e7e7e7;
+}
+
+#DM-information-subtitle {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	height: 10%;
+	display: flex;
+	align-items: start;
+	color: #e7e7e7;
+}
+
+#DM-form-title {
+	font-size: 3rem;
+	font-weight: 1000;
+	margin-top: 10rem;
+	margin-bottom: 3rem;
+	height: 30%;
+	width: 60%;
+	max-width: 40rem;
+	display: flex;
+}
+
+.DM-form-input {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 1rem;
+	user-select: text;
+}
+
+.DM-form-input-component {
+	font-size: 1.5rem;
+	background-color: transparent;
+	width: 70%;
+	max-width: 40rem;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #000000;
+	margin-bottom: 1rem;
+	padding: 0.5rem;
+}
+
+.DM-form-button {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	width: 70%;
+	max-width: 40rem;
+}
+.DM-form-button-components {
+	height: 2.5rem;
+	width: 10rem;
+	font-size: 1.2rem;
+	background-color: #545454;
+	margin-top: 10px;
+	color: #e7e7e7;
+	border: 1px solid #545454;
+	outline: none;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	font-weight: 600;
+}
+.DM-form-button-components:hover {
+	background-color: #e7e7e7;
+	color: #545454;
+}

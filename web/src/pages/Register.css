@@ -6,50 +6,6 @@
 	height: max-content;
 	min-height: 100%;
 }
-
-.register-information {
-	position: sticky;
-	top: 0px;
-	height: 100vh;
-	width: 20%;
-	min-width: 30rem;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	background-color: #545454;
-}
-
-.register-form {
-	width: 80%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	user-select: none;
-}
-
-.register-form-input {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	width: 100%;
-	margin-bottom: 1rem;
-	user-select: text;
-}
-
-.register-form-input-component {
-	font-size: 1.5rem;
-	background-color: transparent;
-	width: 70%;
-	max-width: 40rem;
-	border: none;
-	outline: none;
-	border-bottom: 1px solid #000000;
-	margin-bottom: 1rem;
-	padding: 0.5rem;
-}
 .register-form-terms-and-conditions {
 	display: flex;
 	flex-direction: row;
@@ -57,63 +13,6 @@
 	justify-content: center;
 	width: 100%;
 	margin-bottom: 1rem;
-}
-.register-form-button {
-	display: flex;
-	flex-direction: column;
-	align-items: end;
-	width: 70%;
-	max-width: 40rem;
-}
-.register-form-button-components {
-	height: 2.5rem;
-	width: 10rem;
-	font-size: 1.2rem;
-	background-color: #545454;
-	margin-top: 10px;
-	color: #e7e7e7;
-	border: 1px solid #545454;
-	outline: none;
-	border-radius: 0.5rem;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	cursor: pointer;
-	font-weight: 600;
-}
-.register-form-button-components:hover {
-	background-color: #e7e7e7;
-	color: #545454;
-}
-
-#register-information-title {
-	font-size: 3rem;
-	font-weight: 1000;
-	margin-bottom: 1rem;
-	height: 30%;
-	display: flex;
-	align-items: end;
-	color: #e7e7e7;
-}
-
-#register-information-subtitle {
-	font-size: 1.5rem;
-	font-weight: 500;
-	margin-bottom: 1rem;
-	height: 10%;
-	display: flex;
-	align-items: start;
-	color: #e7e7e7;
-}
-
-#register-form-title {
-	font-size: 3rem;
-	font-weight: 1000;
-	margin: 1rem;
-	margin-top: 10rem;
-	height: 30%;
-	display: flex;
 }
 input:-webkit-autofill {
 	-webkit-box-shadow: transparent inset;
