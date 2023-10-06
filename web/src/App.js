@@ -1,15 +1,13 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Error, Register } from ".";
-import { Main } from "./pages";
-import TagList from "./pages/TagList";
+import { Main, Register, Error, TagList } from "./pages";
 
 function App() {
 	return (
 		<div className="App">
 			<Routes className="page">
-				<Route path="/register" element={<Register />} />
 				<Route path="/" element={<Main />} />
+				<Route path="/register" element={<Register />} />
 				<Route path="/taglist" element={<TagList />} />
 				<Route path="*" element={<Error errorno={404} />} />
 			</Routes>
