@@ -1,0 +1,81 @@
+.tag-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2vw;
+    color: #545454;
+}
+
+.tag-search-wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFDF9;
+    border: 0px;
+    box-shadow: 0vw 0.1vw 0.3vw 0vw #a8a8a8;
+    border-radius: 10vw;
+    width: 27vw;
+    height: 2.7vw;
+    min-width: 18rem;
+    min-height: 1.8rem;
+    margin-right: 0.7vw;
+    padding: 0vw 1.1vw;
+}
+
+.tag-search-input {
+    border: 0px;
+    background: none;
+    flex-grow: 2;
+}
+
+.tag-search-input:focus {
+    outline: none;
+}
+
+.tag-search-btn {
+    height: 2.7vw;
+    background: none;
+    min-height: 1.8rem;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    overflow: visible;
+    cursor: pointer;
+    margin-left: 0.6vw;
+}
+
+.tag-search-btn img {
+    width: 1.3rem;
+}
+
+.tag-search-sort {
+    background-color: #FFFDF9;
+    border: 0px;
+    box-shadow: 0vw 0.1vw 0.3vw 0vw #a8a8a8;
+    width: 6vw;
+    min-width: 6rem;
+    border-radius: 0.3vw;
+    cursor: pointer;
+    text-align: center;
+    background: url('../../assets/taglist/sortSelectIcon.png') no-repeat right 0rem center;
+    background-size: cover;
+    padding-right: 0.9rem;
+}
+
+select.tag-search-sort {
+    -webkit-appearance:none; /* for chrome */-moz-appearance:none; /*for firefox*/
+    appearance:none;
+}
+select::-ms-expand {
+    display: none;
+}
+
+.tag-search-sort:hover {
+    background-color: #545454;
+    color: #FFFDF9;
+    background: url('../../assets/taglist/sortSelectFocusIcon.png') no-repeat right 0rem center;
+    background-size: cover;
+    padding-right: 0.9rem;
+}
+.tag-search-sort:focus {
+    outline: none;
+}

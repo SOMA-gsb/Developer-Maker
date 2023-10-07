@@ -1,24 +1,23 @@
-function TagSearch() {
-    const options = [
-        { value: "Alphabetical order", name: "Alphabetical order" },
-        { value: "Ascending for level", name: "Ascending for level" },
-        { value: "Descending for level", name: "Descending for level" },
-        { value: "Ascending for the last study date", name: "Ascending for the last study date" },
-        { value: "Descending for the last study date", name: "Descending for the last study date" },
-    ]
+import './TagSearch.css';
+import { searchIcon } from "../../assets/taglist";
+
+function TagSearch(props) {
+    const sortTypes = ['Basic', 'High level', 'Low level'];
 
     return  (
-        <div>
-            <input type="text" placeholder="Type Algorithm Tag" />
-            <select>
-                {options.map((option) => (
-                    <option
-                        key={option.value}
-                        value={option.value}
-                    >
-                        {option.name}
-                    </option>
-                ))}
+        <div className="tag-search">
+            <div className="tag-search-wrapper">
+                <input className="tag-search-input" type="text" placeholder="Type Algorithm Tag" onChange={e => props.setQuery(e.target.value)} />
+                <button className="tag-search-btn">
+                    <img src={searchIcon} alt="search" />
+                </button>
+            </div>
+            <select className="tag-search-sort" onChange={(e) => props.setSortType(e.target.value)}>
+                {
+                    sortTypes.map((sortType) => (
+                        <option key={sortType}>{sortType}</option>
+                    ))
+                } 
             </select>
         </div>
     );

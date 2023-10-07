@@ -1,0 +1,138 @@
+.list-content {
+    margin-bottom: 5.5vw;
+}
+
+table.list-table {
+    color: #545454;
+    margin: auto;
+    border-spacing: 0 0.5rem;
+    text-align: left;
+    padding-bottom: 1.5vw;
+    min-width: 37rem;
+    width: 77vw;
+}
+
+thead.list-thead {
+    font-size: 0.8rem;
+}
+
+.list-thead th {
+    padding-bottom: 0.7vw;
+}
+
+img.triangle-icon {
+    width: 0.8rem;
+    margin-left: 0.7vw;
+}
+
+.list-tbody tr {
+    height: 3vw;
+    background-color: #FFFDF9;
+    box-shadow: 0rem 0rem 0.1rem 0rem #919191;
+}
+
+.list-tbody th {
+    text-align: center;
+}
+
+img.pencil-icon {
+    width: 1.5rem;
+    padding: 0 0.3rem;
+}
+
+.list-tbody .list-bolder {
+    font-weight: bold;
+}
+
+.level-box {
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.3rem;
+    width: 6rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    color: #fffdf0;
+}
+
+.tag-progress-bar {
+    appearance: none;
+    width: 20vw;
+    margin-right: 0.5rem;
+}
+.tag-progress-bar::-webkit-progress-bar {
+    background: #E8E8E8;
+    border-radius: 1rem;
+}
+
+.tag-progress-bar::-webkit-progress-value {
+    border-radius: 1rem;
+}
+.lev1.tag-progress-bar::-webkit-progress-value {
+    background: linear-gradient(to right, #ffcece, #f8595b);
+}
+.lev2.tag-progress-bar::-webkit-progress-value {
+    background: linear-gradient(to right, #ffd1b6, #ff8d4c);
+}
+.lev3.tag-progress-bar::-webkit-progress-value {
+    background: linear-gradient(to right, #fff4bb, #ffd700);
+}
+.lev4.tag-progress-bar::-webkit-progress-value {
+    background: linear-gradient(to right, #afffa9, #42d435);
+}
+.lev5.tag-progress-bar::-webkit-progress-value {
+    background: linear-gradient(to right, #bbdaff, #489cff);
+}
+.lev6.tag-progress-bar::-webkit-progress-value {
+    background: linear-gradient(to right, #cfd4ff, #7482ff);
+}
+.lev7.tag-progress-bar::-webkit-progress-value {
+    background: linear-gradient(to right, #e3ceff, #ae6fff);
+}
+
+
+button.list-pagination-btn {
+    margin: 0 1.5vw;
+    color: #545454;
+    font-size: 1.3rem;
+    border: none;
+    background: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 10rem;
+}
+button.list-pagination-btn:hover {
+    background-color: #FFFDF9;
+}
+button.list-pagination-btn:focus {
+    outline: none;
+}
+button.list-pagination-btn.list-active {
+    background-color: #FFFDF9;
+    border: 0.07rem solid #CDCDCD;
+}
+
+.level-box.lev1 {
+    background-color: #FF8686;
+}
+.level-box.lev2 {
+    background-color: #FFA776;
+}
+.level-box.lev3 {
+    background-color: #ffd600;
+}
+.level-box.lev4 {
+    background-color: #7ae470;
+}
+.level-box.lev5 {
+    background-color: #83bcff;
+}
+.level-box.lev6 {
+    background-color: #8A96FF;
+}
+.level-box.lev7 {
+    background-color: #CBA1FF;
+}
+
+.tag-list-title {
+    width: 18vw;
+}
