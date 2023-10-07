@@ -1,0 +1,36 @@
+.register-page {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	height: max-content;
+	min-height: 100%;
+}
+.register-form-terms-and-conditions {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 1rem;
+}
+input:-webkit-autofill {
+	-webkit-box-shadow: transparent inset;
+	-webkit-text-fill-color: #000;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000000s ease-in-out 0s;
+}
+input::placeholder {
+	font-size: 1.5rem;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+	color: darkblue;
+	font-weight: bold;
+}

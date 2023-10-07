@@ -4,8 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-export { default as Error } from "./Error.js";
-export { default as Register } from "./Register.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
