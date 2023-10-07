@@ -51,6 +51,11 @@ a.Nav-btn {
     cursor: pointer;
 }
 
+a.Nav-btn:visited {
+    color: #545454;
+    font-weight: normal;
+}
+
 a.Nav-btn:hover, a.Nav-btn:active {
     text-decoration: none;
     font-weight: bold;

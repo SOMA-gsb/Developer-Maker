@@ -30,6 +30,10 @@
     outline: none;
 }
 
+.tag-search-input::placeholder {
+    font-size: 1rem;
+}
+
 .tag-search-btn {
     height: 2.7vw;
     background: none;
