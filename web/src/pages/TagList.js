@@ -90,7 +90,7 @@ const algorithmTags = [
     },
     {
         id: 8,
-        tag: 'Btruete Force',
+        tag: 'Btrute Force',
         level: 1,
         progress: 20,
         lastStudy: '2023.03.02'

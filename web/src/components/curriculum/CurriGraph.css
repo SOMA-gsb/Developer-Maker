@@ -1,0 +1,15 @@
+#curriculum-tree-wrapper{
+    width: 95vw;
+    height: 43rem;
+    margin: 0 auto;
+    margin-top: 0.3vw;
+    margin-bottom: 2rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    background: url('../../assets/curriculum/curriBackground.png') no-repeat center center;
+    background-size: cover;
+}
+
+.rd3t-tree-container {
+    box-shadow: inset 0rem 0rem 0.5rem 0rem #c8c8c8;
+}

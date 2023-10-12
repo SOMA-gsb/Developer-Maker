@@ -1,10 +1,13 @@
+import { Link } from "react-router-dom";
 import { pencilIcon } from "../../assets/common";
 
 function TagListElem(props) {
     return (
         <tr key={props.id}>
             <th>
-                <img className="pencil-icon" src={pencilIcon} alt='study' />
+                <Link to={`/curriculum/${props.tag.toLowerCase().replace(/ /g, '')}/${props.level}`}>
+                    <img className="pencil-icon" src={pencilIcon} alt='study' />
+                </Link>
             </th>
             <td className='tag-list-title list-bolder'>{props.tag}</td>
             <td>
