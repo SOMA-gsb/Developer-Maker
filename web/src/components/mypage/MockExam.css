@@ -64,11 +64,22 @@
 .profile-exam-btn {
     background-color: #6CA86B;
     color: #FFFEFE;
-    width: 16vw;
+    border: none;
+    cursor: pointer;
+    width: 17vw;
     margin: auto;
     border-radius: 0.7rem;
     font-weight: bold;
     font-size: 1.1rem;
     padding: 0.5rem;
     box-shadow: 0rem 0.2rem 0.3rem 0rem #2c6c2c;
+}
+
+.profile-exam-btn:hover {
+    background-color: #5A8C4F;
+}
+
+.profile-exam-btn:active {
+    background-color: #6CA86B;
+    box-shadow: 0rem 0.1rem 0.3rem 0rem #2c6c2c;
 }

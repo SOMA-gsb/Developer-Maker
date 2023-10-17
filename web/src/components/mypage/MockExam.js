@@ -24,7 +24,7 @@ function MockExam(props) {
             <div className="profile-exam-comment">
                 Check Your Algorithm Skill !
             </div>
-            <div className="profile-exam-btn">Register</div>
+            <button className="profile-exam-btn">Register</button>
         </div>
     );
 };
