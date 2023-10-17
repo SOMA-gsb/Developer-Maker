@@ -30,7 +30,7 @@ function List(props) {
     }, [props.sortType]);
 
     return (
-        <div className='list-content'>
+        <div className={`list-content ${props.class}`}>
             <table className="list-table">
                 <thead className="list-thead">
                     <tr>
@@ -53,11 +53,6 @@ function List(props) {
                     }
                 </tbody>
             </table>
-            {/* <div className="list-pagination">
-                <button className="list-pagination-btn list-active">1</button>
-                <button className="list-pagination-btn">2</button>
-                <button className="list-pagination-btn">3</button>
-            </div> */}
         </div>
     );
 };

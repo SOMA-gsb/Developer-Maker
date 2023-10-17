@@ -1,0 +1,71 @@
+#mypage-content {
+    width: 72vw;
+    margin: 1vw 0vw 1vw 1vw;
+}
+
+#mypage-detail-contents {
+    display: flex;
+}
+
+#mypage-graphs {
+    display: flex;
+}
+
+#mypage-list {
+    width: 70vw;
+    height: 32vh;
+    background-color: #FFFEFE;
+    border-radius: 0.3rem;
+    box-shadow: 0rem 0rem 0.1rem 0rem #b2b2b2;
+}
+
+.mypage-list-title-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.mypage-list-title {
+    font-weight: bold;
+}
+
+.mypage-list-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFDF9;
+    box-shadow: 0rem 0.1rem 0.2rem 0rem #6a6a6a;
+    width: 5rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    margin-left: 44.3rem;
+    font-size: 0.9rem;
+}
+
+.analysis-list {
+    height: 24vh;
+    overflow: auto;
+    width: 67vw;
+    margin: auto;
+}
+
+.analysis-list .list-table {
+    border-spacing: 0;
+    width: 67vw;
+}
+
+.analysis-list .list-bar {
+    border-spacing: 0;
+}
+
+.analysis-list .list-tbody tr {
+    box-shadow: none;
+    background-color: #FFFAF0;
+    font-size: 0.9rem;
+}
+
+.analysis-list .list-tbody tr:nth-child(even) {
+    background-color: #FFFEFE;
+}
+

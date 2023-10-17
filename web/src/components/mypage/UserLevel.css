@@ -1,0 +1,37 @@
+.profile-ps-levels {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.profile-ps-icons {
+    width: 2rem;
+    border: 0.3rem solid #83bcff;
+    border-radius: 100%;
+    box-shadow: 0rem 0.03rem 0.2rem 0rem #3a3a3a;
+}
+
+.mypage-codeforces .profile-ps-icons  {
+    border: 0.3rem solid #FFBF61;
+}
+
+.mypage-boj .profile-ps-icons  {
+    border: 0.3rem solid #10D493;
+}
+
+.profile-ps-contents {
+    text-align: initial;
+    margin-left: 0.7rem;
+    padding-top: 0.1rem;
+    width: 10vw;
+}
+
+.profile-ps-title {
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.profile-ps-lev {
+    font-size: 0.8rem;
+    margin-top: 0.3rem;
+}

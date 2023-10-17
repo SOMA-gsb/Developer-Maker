@@ -1,0 +1,47 @@
+.mypage-line-graph {
+    width: 43vw;
+    height: 39vh;
+    background-color: #FFFEFE;
+    border-radius: 0.3rem;
+    margin: 1vw 2vw 1vw 0vw;
+    box-shadow: 0rem 0rem 0.1rem 0rem #b2b2b2;
+}
+
+.line-graph-title-bar {
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.line-graph-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.line-graph-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFDF9;
+    box-shadow: 0rem 0.1rem 0.2rem 0rem #6a6a6a;
+    width: 5rem;
+    height: 1.8rem;
+    border-radius: 1rem;
+    margin-left: 18rem;
+}
+
+.line-graph-btn-content {
+    width: 2rem;
+    font-size: 0.9rem;
+}
+
+.line-graph-btn-icon {
+    width: 0.9rem;
+}
+
+.line-graph {
+    min-height: 30vh;
+    max-height: 30vh;
+    margin: auto;
+}

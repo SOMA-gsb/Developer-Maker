@@ -8,13 +8,9 @@ function NavBar() {
         <div id="Navigation-bar">
             <Link id="Main-btn" to="/"><img className="Nav-logos" src={mainLogo} alt="Developer Maker" /></Link>
             <div id='Nav-btns'>
-                {/* <Link to="/taglist" className='Nav-btn'>Curriculum</Link>
-                <div className='Nav-btn'>Mock Exam</div>
-                <div className='Nav-btn'>GSB</div>
-                <div id='User-btn'><img className="Nav-logos" src={userLogo} alt="userLogo"/></div> */}
                 <CustomLink to="/taglist" className='Nav-btn'>Curriculum</CustomLink>
                 <div className='Nav-btn'>Mock Exam</div>
-                <div className='Nav-btn'>GSB</div>
+                <CustomLink to="/mypage" className='Nav-btn'>GSB</CustomLink>
                 <div id='User-btn'><img className="Nav-logos" src={userLogo} alt="userLogo"/></div>
             </div>
         </div>

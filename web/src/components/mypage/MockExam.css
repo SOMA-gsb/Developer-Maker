@@ -1,0 +1,74 @@
+.profile-exam {
+    background-color: #A0DD9F;
+    width: 19vw;
+    height: 15.5vw;
+    margin: auto;
+    border-radius: 1rem;
+    margin-top: 1rem;
+}
+
+.profile-exam-top {
+    font-weight: bold;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-exam-top img {
+    width: 1.1rem;
+    margin-left: 10rem;
+}
+
+.profile-exam-contents {
+    background-color: #FFFEFE;
+    width: 16vw;
+    margin: auto;
+    text-align: initial;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.profile-exam-title {
+    font-weight: bold;
+}
+
+.profile-exam-lev {
+    display: flex;
+    align-items: center;
+    margin: 0.4rem 0;
+}
+
+.profile-exam-lev img {
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+.profile-exam-date {
+    display: flex;
+    align-items: center;
+}
+
+.profile-exam-date img {
+    margin-right: 0.5rem;
+    width: 2rem;
+}
+
+.profile-exam-comment {
+    font-size: 0.8rem;
+    margin: 0.7rem;
+}
+
+.profile-exam-btn {
+    background-color: #6CA86B;
+    color: #FFFEFE;
+    width: 16vw;
+    margin: auto;
+    border-radius: 0.7rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    box-shadow: 0rem 0.2rem 0.3rem 0rem #2c6c2c;
+}

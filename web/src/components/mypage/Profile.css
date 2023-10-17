@@ -1,0 +1,66 @@
+#mypage-profile {
+    width: 22vw;
+    height: 87vh;
+    background-color: #FFFEFE;
+    margin: 1vw 1vw 2vw 3vw;
+    border-radius: 2rem;
+    box-shadow: 0rem 0rem 0.2rem 0rem #b9b9b9;
+}
+
+#mypage-profile-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.7rem;
+    margin-bottom: 0.5rem;
+}
+
+#mypage-profile-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-right: 14vw;
+}
+
+#mypage-profile-setting-icon {
+    width: 1.5rem;
+}
+
+#mypage-profile-background {
+    background-color: #CAEFC9;
+    width: 19vw;
+    height: 5vw;
+    margin: auto;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+#mypage-profile-img {
+    width: 5vw;
+    height: 5vw;
+    background-color: #FFFDF9;
+    box-shadow: 0rem 0.1rem 0.3rem 0rem silver;
+    border-radius: 100%;
+    margin: auto;
+    margin-top: -2.5vw;
+}
+
+#mypage-profile-img img {
+    width: 3vw;
+    height: 3vw;
+    margin-top: 1vw;
+}
+
+#mypage-profile-name {
+    font-weight: bold;
+    margin: 0.5rem 0rem 0.3rem 0rem;
+    font-size: 1.7rem;
+}
+
+#mypage-profile-name img {
+    width: 1.7rem;
+    margin-right: 0.3rem;
+}
+
+#mypage-profile-introduce {
+    font-size: 0.8rem;
+}

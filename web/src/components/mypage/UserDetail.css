@@ -1,0 +1,52 @@
+.mypage-detail {
+    width: 16vw;
+    height: 12vh;
+    background-color: #FFFEFE;
+    border-radius: 0.3rem;
+    margin-right: 2vw;
+    box-shadow: 0rem 0rem 0.1rem 0rem #b2b2b2;
+    display: flex;
+    align-items: center;
+}
+
+.mypage-detail-icons {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-left: 1.1vw;
+    margin-right: 0.7vw;
+}
+
+.mypage-detail-contents {
+    text-align: initial;
+    width: 10vw
+}
+
+.mypage-detail-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: auto;
+    margin-bottom: 0.3rem;
+}
+
+.mypage-detail-subtitle {
+    font-size: 0.8rem;
+}
+
+.mypage-progress {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-left: 1.1vw;
+    margin-right: 0.7vw;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, #FFFEFE 50%, transparent 50% 100%), conic-gradient(#89CE88 63%, #CAEFC9 0);   
+}
+
+.mypage-progress.mypage-ranking {
+    background: radial-gradient(closest-side, #FFFEFE 50%, transparent 50% 100%), conic-gradient(#FFE70C 31%, #FFF6A9 0);   
+}
+
+.mypage-progress-bar {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
