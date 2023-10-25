@@ -1,0 +1,60 @@
+.currigraph-child rect {
+    width: 13.74rem;
+    height: 4.12rem;
+    transform: translate(-6.87rem, -2.06rem);
+    rx: 1.25rem;
+    stroke: none;
+}
+
+.currigraph-child image {
+    transform: translate(-6.07rem, -1.25rem);
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.currigraph-child-title {
+    stroke-width: 0;
+    font-weight: bold;
+    transform: translate(-3.14rem, -0.19rem);
+    font-size: 0.88rem;
+    fill: #fffefb;
+}
+
+.currigraph-child-title.lev1 {
+    fill: #ff5e5e;
+}
+
+.currigraph-child-title.lev2 {
+    fill: #ff8600;
+}
+
+.currigraph-child-title.lev3 {
+    fill: #ffa900;
+}
+
+.currigraph-child-title.lev4 {
+    fill: #51bd47;
+}
+
+.currigraph-child-title.lev5 {
+    fill: #50a1ff;
+}
+
+.currigraph-child-title.lev6 {
+    fill: #5e6eff;
+}
+
+.currigraph-child-title.lev7 {
+    fill: #a963ff;
+}
+
+.currigraph-child-ref {
+    font-size: 0.68rem;
+    stroke-width: 0;
+    transform: translate(-3.15rem, 1.04rem);
+    fill: #555555;
+}
+
+.currigraph-child-ref.solved {
+    fill: #FFFEFB;
+}

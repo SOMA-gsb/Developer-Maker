@@ -1,41 +1,67 @@
 import './CurriGraph.css';
 import Tree from 'react-d3-tree';
+import RootNode from './RootNode';
+import ChildNode from './ChildNode';
+
+function renderCurriNode({ nodeDatum }) {
+    if (nodeDatum.attributes?.ref)
+        return <ChildNode nodeDatum={nodeDatum} />;
+    else
+        return <RootNode nodeDatum={nodeDatum} />;
+};
 
 function CurriGraph() {
     return (
         <div id="curriculum-tree-wrapper">
-            <Tree id="curriculum-tree-background" data={orgChart} orientation='vertical' />
+            <Tree
+                id="curriculum-tree-background" 
+                data={curriProbs} 
+                orientation='vertical'
+                renderCustomNodeElement={renderCurriNode}
+            />
         </div>
     );
 };
 
 export default CurriGraph;
 
-const orgChart = {
+const curriProbs = {
     name: 'Graph Traversal',
+    attributes: {
+        level: 1,
+        solved: true,
+    },
     children: [
         {
         name: 'BFS & DFS',
         attributes: {
-            '': 'CodeForce 1340A',
+            ref: 'CodeForces 1340A',
+            level: 1,
+            solved: true,
         },
         children: [
             {
             name: 'The Movement Of The Night',
             attributes: {
-                '': 'CodeForce 1015A',
+                ref: 'CodeForces 1015A',
+                level: 1,
+                solved: false,
             },
             children: [
                 {
                 name: 'Research Institute',
                 attributes: {
-                    '': 'CodeForce 1340D',
+                    ref: 'CodeForces 1340D',
+                    level: 2,
+                    solved: false,
                 },
                 children: [
                     {
                     name: 'Swan Lake',
                     attributes: {
-                        '': 'CodeForce 2003A',
+                        ref: 'CodeForces 2003A',
+                        level: 3,
+                        solved: false,
                     },
                     },
                 ],
@@ -43,13 +69,17 @@ const orgChart = {
                 {
                 name: 'Tomato',
                 attributes: {
-                    '': 'CodeForce 1051C',
+                    ref: 'CodeForces 1051C',
+                    level: 2,
+                    solved: false,
                 },
                 children: [
                     {
                     name: 'Robot',
                     attributes: {
-                        '': 'CodeForce 2000A',
+                        ref: 'CodeForces 2000A',
+                        level: 2,
+                        solved: false,
                     },
                     },
                 ],
@@ -59,13 +89,17 @@ const orgChart = {
             {
             name: 'Alphabet',
             attributes: {
-                '': 'CodeForce 1996A',
+                ref: 'CodeForces 1996A',
+                level: 2,
+                solved: true,
             },
             children: [
                 {
                 name: 'Ant',
                 attributes: {
-                    '': 'CodeForce 1605B',
+                    ref: 'CodeForces 1605B',
+                    level: 3,
+                    solved: true,
                 },
                 },
             ],

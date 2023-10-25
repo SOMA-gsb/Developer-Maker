@@ -1,0 +1,20 @@
+.currigraph-root circle {
+    stroke: none;
+    cx: 0;
+    cy: 0.6rem;
+    r: 2.8rem;
+}
+
+.currigraph-root image {
+    width: 2.5rem;
+    height: 2.5rem;
+    transform: translate(-1.25rem, -1.25rem);
+}
+
+.currigraph-root text {
+    fill: #FFFEFB;
+    stroke-width: 0;
+    font-weight: bold;
+    font-size: 0.88rem;
+    transform: translate(-1.25rem, 2.1rem);
+}
