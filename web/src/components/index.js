@@ -6,3 +6,4 @@ export { default as TagSearch } from "./taglist/TagSearch";
 export { default as List } from "./common/List";
 export { default as CurriContents } from "./curriculum/CurriContents";
 export { default as MyPageContent } from "./mypage/MyPageContent";
+export { default as Register } from "./mockexam/Register";

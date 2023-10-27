@@ -1,0 +1,39 @@
+.result-title {
+    width: 77vw;
+    margin: auto;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.result-hr {
+    width: 77vw;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5.5vw;
+    align-items: center;
+}
+
+.pagination-btn {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 0.6rem;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 2rem;
+    border-radius: 2rem;
+    border: solid #f7f5f2 0.1rem;
+    cursor: pointer;
+}
+
+.pagination-btn.active {
+    background-color: #FFFDF9;
+    border: solid #CDCDCD 0.1rem;
+}
+
+.pagination-btn:hover {
+    background-color: #CDCDCD94;
+}

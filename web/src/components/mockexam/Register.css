@@ -1,0 +1,50 @@
+.register-wrapper {
+    margin: 2vw auto;
+    margin-top: 1vw;
+    min-width: 37rem;
+    width: 77vw;
+    height: auto;
+    background: #FFFEFB;
+    box-shadow: 0rem 0rem 0.1rem 0rem gray;
+}
+
+.register-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2vw;
+    padding-bottom: 1.5vw;
+}
+
+.register-title-contents {
+    text-align: left;
+    margin-right: 31.5vw;
+}
+
+.register-maintitle {
+    color: #404040;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.register-subtitle {
+    margin-top: 0.7vw;
+    color: #545454;
+    font-size: 1rem;
+}
+
+.register-subtitle b {
+    margin-right: 0.5rem;
+}
+
+.register-btn {
+    width: 10rem;
+    height: 3rem;
+    border-radius: 0.7rem;
+    background-color: #FF7878;
+    box-shadow: 0rem 0.2rem 0.2rem 0rem #beb8b8;
+    color: #FFFEFB;
+    font-size: 1.3rem;
+    font-weight: bold;
+    line-height: 3rem;
+}

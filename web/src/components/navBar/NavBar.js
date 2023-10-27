@@ -9,7 +9,7 @@ function NavBar() {
             <Link id="Main-btn" to="/"><img className="Nav-logos" src={mainLogo} alt="Developer Maker" /></Link>
             <div id='Nav-btns'>
                 <CustomLink to="/taglist" className='Nav-btn'>Curriculum</CustomLink>
-                <div className='Nav-btn'>Mock Exam</div>
+                <CustomLink to="/mockexam" className='Nav-btn'>Mock Exam</CustomLink>
                 <CustomLink to="/mypage" className='Nav-btn'>GSB</CustomLink>
                 <div id='User-btn'><img className="Nav-logos" src={userLogo} alt="userLogo"/></div>
             </div>

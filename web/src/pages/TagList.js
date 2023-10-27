@@ -9,9 +9,9 @@ function TagList(props) {
     return (
         <>
             <NavBar />
-                <TitleBox title="Algorithm Tag List" subtitle="Develop your algorithm skill !" icon={taglistIcon} />
-                <TagSearch setQuery={setQuery} sortType={sortType} setSortType={setSortType} />
-                <List type='tagList' heads={props.tagTableHeads} contents={props.algorithmTags} query={query} sortType={sortType} />
+            <TitleBox title="Algorithm Tag List" subtitle="Develop your algorithm skill !" icon={taglistIcon} />
+            <TagSearch setQuery={setQuery} sortType={sortType} setSortType={setSortType} />
+            <List type='tagList' class='curriculum-tag-list' heads={props.tagTableHeads} contents={props.algorithmTags} query={query} sortType={sortType} />
             <Footer />
         </>
     );

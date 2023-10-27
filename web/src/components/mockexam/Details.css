@@ -1,0 +1,32 @@
+.exam-details {
+    display: flex;
+    justify-content: center;
+}
+
+.exam-details:nth-child(3) {
+    padding: 1.5vw 0vw 2vw 0vw;
+}
+
+.exam-detail-elem {
+    display: flex;
+    width: 23vw;
+}
+
+.exam-detail-img {
+    height: 5.5rem;
+    width: 5.5rem;
+}
+
+.exam-detail-contents {
+    text-align: left;
+    padding-left: 1vw;
+}
+
+.exam-detail-title {
+    margin: 1rem 0rem 0.5rem 0rem;
+}
+
+.exam-detail-value {
+    font-weight: bold;
+    font-size: 1.6rem;
+}

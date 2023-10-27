@@ -1,5 +1,6 @@
 .title-box {
     margin: 2vw auto;
+    margin-bottom: 0;
     display: flex;
     min-width: 37rem;
     width: 77vw;

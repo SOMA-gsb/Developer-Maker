@@ -1,6 +1,7 @@
 import './List.css'
 import { triangleIcon } from "../../assets/common";
 import TagListElem from './TagListElem';
+import ExamResult from './ExamResult';
 import { useEffect, useState } from 'react';
 
 function List(props) {
@@ -8,9 +9,11 @@ function List(props) {
     const [tags, setTags] = useState(props.contents);
 
     useEffect(() => {
-        setFilteredTags(tags.filter((content) => {
-            return content.tag.toLowerCase().replace(/ /g, '').includes(props.query.toLowerCase().replace(/ /g, ''));
-        }));
+        if(props.query != '') {
+            setFilteredTags(tags.filter((content) => {
+                return content.tag.toLowerCase().replace(/ /g, '').includes(props.query.toLowerCase().replace(/ /g, ''));
+            }));
+        }
     }, [props.query]);
 
     useEffect(() => {
@@ -47,9 +50,15 @@ function List(props) {
                 </thead>
                 <tbody className="list-tbody">
                     {
-                        props.type == 'tagList' && filteredTags.map((content) => (
+                        props.type == 'tagList' ?
+                        filteredTags.map((content) => (
                             <TagListElem id={content.id} tag={content.tag} level={content.level} progress={content.progress} lastStudy={content.lastStudy} />
-                        ))
+                        )) :
+                        props.type == 'examResult' ?
+                        filteredTags.slice(props.offset, props.offset + 5).map((content) => (
+                            <ExamResult id={content.id} date={content.date} level={content.level} score={content.score} totalScore={content.totalScore} percentage={content.percentage} />
+                        )) :
+                        null
                     }
                 </tbody>
             </table>

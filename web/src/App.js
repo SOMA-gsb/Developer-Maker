@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Main, Register, Login, Error, TagList, Curriculum, MyPage } from "./pages";
+import { Main, Register, Login, Error, TagList, Curriculum, MyPage, MockExam } from "./pages";
 
 function App() {
 	return (
@@ -11,6 +11,7 @@ function App() {
 				<Route path="/login" element={<Login />} />
 				<Route path="/taglist" element={<TagList tagTableHeads={tagTableHeads} algorithmTags={algorithmTags} />} />
 				<Route path="/curriculum/:tag/:level" element={<Curriculum />} />
+				<Route path="/mockexam" element={<MockExam/>} />
 				<Route path="/mypage" element={<MyPage tagTableHeads={tagTableHeads} algorithmTags={algorithmTags} />} />
 				<Route path="*" element={<Error errorno={404} />} />
 			</Routes>
