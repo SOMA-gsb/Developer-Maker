@@ -33,35 +33,32 @@ function List(props) {
     }, [props.sortType]);
 
     return (
-        <div className={`list-content ${props.class}`}>
-            <table className="list-table">
-                <thead className="list-thead">
-                    <tr>
-                        <th></th>
-                        {
-                            props.heads.map((head) => (
-                                <th key={head.id}>
-                                    <span>{head.name}</span>
-                                    <img className="triangle-icon" src={triangleIcon} alt='list' />
-                                </th>
-                            ))
-                        }
-                    </tr>
-                </thead>
-                <tbody className="list-tbody">
-                    {
-                        props.type == 'tagList' ?
-                        filteredTags.map((content) => (
-                            <TagListElem id={content.id} tag={content.tag} level={content.level} progress={content.progress} lastStudy={content.lastStudy} />
-                        )) :
-                        props.type == 'examResult' ?
-                        filteredTags.slice(props.offset, props.offset + 5).map((content) => (
-                            <ExamResult id={content.id} date={content.date} level={content.level} score={content.score} totalScore={content.totalScore} percentage={content.percentage} />
-                        )) :
-                        null
-                    }
-                </tbody>
-            </table>
+        <div className={`list-table ${props.class}`}>
+            <div className="list-thead">
+                <div></div>
+                {
+                    props.heads.map((head) => (
+                        <div key={head.id}>
+                            <span>{head.name}</span>
+                            <img className="triangle-icon" src={triangleIcon} alt='list' />
+                        </div>
+                    ))
+                }
+            </div>
+            {props.class == 'analysis-list' && <hr />}
+            <div className="list-tbody">
+                {
+                    props.type == 'tagList' ?
+                    filteredTags.map((content) => (
+                        <TagListElem id={content.id} tag={content.tag} level={content.level} progress={content.progress} lastStudy={content.lastStudy} key={content.id} />
+                    )) :
+                    props.type == 'examResult' ?
+                    filteredTags.slice(props.offset, props.offset + 5).map((content) => (
+                        <ExamResult id={content.id} date={content.date} level={content.level} score={content.score} totalScore={content.totalScore} percentage={content.percentage} key={content.id}/>
+                    )) :
+                    null
+                }
+            </div>
         </div>
     );
 };

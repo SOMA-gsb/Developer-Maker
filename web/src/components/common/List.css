@@ -1,23 +1,5 @@
-.list-content.curriculum-tag-list {
+.curriculum-tag-list.list-table {
     margin-bottom: 5.5vw;
-}
-
-table.list-table {
-    color: #545454;
-    margin: auto;
-    border-spacing: 0 0.5rem;
-    text-align: left;
-    padding-bottom: 1.5vw;
-    min-width: 37rem;
-    width: 77vw;
-}
-
-thead.list-thead {
-    font-size: 0.8rem;
-}
-
-.list-thead th {
-    padding-bottom: 0.7vw;
 }
 
 img.triangle-icon {
@@ -38,10 +20,6 @@ img.triangle-icon {
 img.pencil-icon {
     width: 1.5rem;
     padding: 0 0.3rem;
-}
-
-.list-tbody .list-bolder {
-    font-weight: bold;
 }
 
 .level-box {
@@ -89,7 +67,6 @@ img.pencil-icon {
     background: linear-gradient(to right, #e3ceff, #ae6fff);
 }
 
-
 button.list-pagination-btn {
     margin: 0 1.5vw;
     color: #545454;
@@ -133,6 +110,82 @@ button.list-pagination-btn.list-active {
     background-color: #CBA1FF;
 }
 
-.tag-list-title {
+.list-table {
+    width: 77vw;
+    min-width: 37rem;
+    margin: auto;
+}
+
+.list-thead {
+    display: flex;
+    color: #545454;
+    padding-bottom: 1.5vw;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.list-elem {
+    display: flex;
+    height: 3vw;
+    background-color: #FFFDF9;
+    box-shadow: 0rem 0rem 0.1rem 0rem #919191;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.list-link-wrapper {
+    width: 4vw;
+    min-width: 2rem;
+}
+
+.list-title {
+    text-align: left;
+    min-width: 7rem;
     width: 18vw;
+    font-weight: bold;
+}
+
+.list-progress {
+    width: 36vw;
+    text-align: left;
+}
+
+.list-level-wrapper {
+    width: 10vw;
+    min-width: 7rem;
+}
+
+.list-thead {
+    text-align: left;
+}
+
+.list-thead div:nth-child(1) {
+    width: 4vw;
+    min-width: 2rem;
+}
+
+.list-thead div:nth-child(2) {
+    width: 18vw;
+    min-width: 7rem;
+}
+
+.list-thead div:nth-child(3) {
+    width: 10vw;
+    min-width: 7rem;
+}
+
+.list-thead div:nth-child(4) {
+    width: 36vw;
+}
+
+.exam-result-list .list-thead {
+    padding: 0.3rem 0rem 0.9rem 0rem;
+}
+
+.exam-result-list .list-progress {
+    width: 38.5vw;
+}
+
+.exam-result-percentage {
+    font-weight: bold;
 }

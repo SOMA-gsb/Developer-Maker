@@ -23,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0rem 0.5rem 0rem;
+    padding: 1rem 0rem 0.6rem 0rem;
 }
 
 .mypage-list-title {
@@ -44,28 +44,43 @@
 }
 
 .analysis-list {
-    height: 24vh;
-    overflow: auto;
     width: 67vw;
     margin: auto;
 }
 
+.analysis-list .list-thead {
+    padding-bottom: 0.5rem;
+}
+
+.analysis-list .list-tbody {
+    height: 20vh;
+    overflow: auto;
+}
+
 .analysis-list .list-table {
-    border-spacing: 0;
     width: 67vw;
 }
 
-.analysis-list .list-bar {
-    border-spacing: 0;
-}
-
-.analysis-list .list-tbody tr {
+.analysis-list .list-elem {
     box-shadow: none;
     background-color: #FFFAF0;
     font-size: 0.9rem;
+    margin: 0;
 }
 
-.analysis-list .list-tbody tr:nth-child(even) {
+.analysis-list .list-elem:nth-child(even) {
     background-color: #FFFEFE;
 }
 
+.analysis-list .list-progress {
+    width: 27vw;
+}
+
+.analysis-list .list-thead div:nth-child(4) {
+    width: 27vw;
+}
+
+.analysis-list hr {
+    margin: 0;
+    border: solid 0.05rem #c8c8c8;
+}

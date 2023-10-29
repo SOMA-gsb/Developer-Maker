@@ -13,12 +13,13 @@ function Result() {
                 <div className="result-title">Result ({examResults.length})</div>
                 <hr className="result-hr" />
             </div>
-            <List offset={offset} type='examResult' heads={examHeads} contents={examResults} query='' sortType='Basic' />
+            <List offset={offset} type='examResult'
+            class='exam-result-list' heads={examHeads} contents={examResults} query='' sortType='Basic' />
             <div className="pagination">
                 <div className="pagination-btn" onClick={() => setPage(page == 1 ? 1 : page - 1)}>{'<'}</div>
                 {
                     [...Array(pageCount)].map((n, i) => (
-                        <div className={`pagination-btn ${page == i + 1 ? 'active' : ''}`} onClick={() => setPage(i + 1)}>{i + 1}</div>
+                        <div className={`pagination-btn ${page == i + 1 ? 'active' : ''}`} onClick={() => setPage(i + 1)} key={i}>{i + 1}</div>
                     ))
                 }
                 <div className="pagination-btn" onClick={() => setPage(page == pageCount ? page : page + 1)}>{'>'}</div>
