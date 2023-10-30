@@ -1,0 +1,28 @@
+.result-detail-visibility.exam-result {
+    box-shadow: 0rem 0.2rem 0.5rem 0rem #919191;
+}
+
+.result-detail-visibility .list-elem {
+    margin-bottom: 0;
+    box-shadow: none;
+}
+
+.result-detail-visibility .result-details {
+    display: block;
+}
+
+.result-details {
+    background-color: #FFFDF9;
+    margin-bottom: 0.5rem;
+    border-top: solid 0.1px #c8c8c8;
+    padding: 0.3rem 1rem;
+    height: 15.1vw;
+    overflow: auto;
+    display: none;
+}
+
+.result-detail {
+    background-color: #EEEEEE;
+    margin: 0.3rem 0;
+    height: 4.7vw;
+}
