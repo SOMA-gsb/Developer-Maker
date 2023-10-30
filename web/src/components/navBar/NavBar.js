@@ -2,6 +2,7 @@ import './NavBar.css';
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import mainLogo from "../../assets/mainLogo.png";
 import userLogo from "../../assets/userLogo.png";
+import PopUpMenu from './PopupMenu';
 
 function NavBar() {
     return (
@@ -12,6 +13,7 @@ function NavBar() {
                 <CustomLink to="/mockexam" className='Nav-btn'>Mock Exam</CustomLink>
                 <CustomLink to="/mypage" className='Nav-btn'>GSB</CustomLink>
                 <div id='User-btn'><img className="Nav-logos" src={userLogo} alt="userLogo"/></div>
+                <PopUpMenu />
             </div>
         </div>
     )

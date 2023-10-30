@@ -1,6 +1,7 @@
-import { bojIcon, codeforcesIcon, dmIcon, settingIcon, userLevIcon, userPicture } from '../../assets/mypage';
+import { bojIcon, codeforcesIcon, dmIcon, settingIcon } from '../../assets/mypage';
 import MockExam from './MockExam';
 import UserLevel from './UserLevel';
+import MainProfile from '../common/MainProfile';
 import './Profile.css';
 
 function Profile() {
@@ -11,12 +12,7 @@ function Profile() {
                 <img id="mypage-profile-setting-icon" src={settingIcon} />
             </div>
 
-            <div id="mypage-profile-background"></div>
-            <div id="mypage-profile-img"><img src={userPicture} /></div>
-            <div id="mypage-profile-name">
-                <img src={userLevIcon} />
-                <span>GSB</span>
-            </div>
+            <MainProfile />
             <div id="mypage-profile-introduce">
                 No Sweat, No Sweet :)
             </div>
