@@ -6,3 +6,4 @@ export { default as TagList } from "./TagList.js";
 export { default as Curriculum } from "./Curriculum.js";
 export { default as MyPage } from "./MyPage.js";
 export { default as MockExam } from "./MockExam.js";
+export { default as TakeExam } from "./TakeExam.js";

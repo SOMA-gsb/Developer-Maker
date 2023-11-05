@@ -1,0 +1,63 @@
+.take-exam-prob-nums {
+    position: relative;
+}
+
+.take-exam-overlay {
+    height: 3.1rem;
+    width: 0.4em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all .5s;
+}
+
+.on1.take-exam-overlay, .take-exam-prob-num.num1:hover ~ .take-exam-overlay {
+    top: 0;
+}
+.on2.take-exam-overlay, .take-exam-prob-num.num2:hover ~ .take-exam-overlay {
+    top: 3.7rem;
+}
+.on3.take-exam-overlay, .take-exam-prob-num.num3:hover ~ .take-exam-overlay {
+    top: 7.4rem;
+}
+.on4.take-exam-overlay, .take-exam-prob-num.num4:hover ~ .take-exam-overlay {
+    top: 11.1rem;
+}
+
+.take-exam-overlay, .take-exam-prob-num:hover ~ .take-exam-overlay {
+    background-color: #525252;
+}
+.correct.take-exam-overlay, .take-exam-prob-num.correct-prob:hover ~ .take-exam-overlay {
+    background-color: #94CF86;
+}
+.wrong.take-exam-overlay, .take-exam-prob-num.wrong-prob:hover ~ .take-exam-overlay {
+    background-color: #EE9191;
+}
+
+.take-exam-prob-num {
+    height: 2.7rem;
+    width: 2.7rem;
+    line-height: 2.7rem;
+    margin-bottom: 1rem;
+    background-color: #525252;
+    color: #FFFDF9;
+    box-shadow: 0.3rem 0.3rem 0rem 0rem #aaaaaa;
+    font-weight: 900;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.take-exam-prob-num.correct-prob {
+    background-color: #94CF86;
+    box-shadow: 0.3rem 0.3rem 0rem 0rem #7F9A78;
+}
+
+.take-exam-prob-num.wrong-prob {
+    background-color: #EE9191;
+    box-shadow: 0.3rem 0.3rem 0rem 0rem #BA7272;
+}
+
+.take-exam-prob-num:hover { color: #a2a2a2; }
+.take-exam-prob-num.correct-prob:hover { color: #d9ecd4; }
+.take-exam-prob-num.wrong-prob:hover { color: #f7d4d4; }
+.take-exam-prob-num:active { color: #FFFDF9 !important; }

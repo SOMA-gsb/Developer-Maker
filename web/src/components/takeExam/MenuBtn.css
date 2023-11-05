@@ -1,0 +1,19 @@
+.take-exam-prob-btns {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.take-exam-prob-btns img {
+    height: 2rem;
+    width: 2rem;
+    margin: 0.7rem auto;
+    padding: 0.3rem;
+    border-radius: 0.5rem;
+    display: block;
+    cursor: pointer;
+}
+
+.take-exam-prob-btns img:hover {
+    background-color: #eeecec;
+}

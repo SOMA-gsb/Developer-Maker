@@ -1,0 +1,77 @@
+.take-exam-code-select {
+    width: 8.5rem !important;
+    margin-right: 1rem;
+    font-weight: bold;
+    background-color: #fffffe;
+}
+
+.react-select__value-container {
+    font-size: 0.9rem !important;
+}
+
+.react-select__menu-list {
+    height: 10rem !important;
+}
+
+.react-select__option {
+    text-align: left;
+    font-size: 0.8rem !important;
+}
+
+.exam-result-list .react-select__menu {
+    width: 20rem !important;
+}
+
+.take-exam-triangle-up {
+    width: 1rem;
+    margin-right: 1rem;
+}
+
+.exam-result-list-title {
+    grid-area: 1/1/2/3;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: hsl(0, 0%, 20%);
+    margin-left: 2px;
+    margin-right: 2px;
+    box-sizing: border-box;
+}
+
+.take-exam-result-list:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.take-exam-result-list-item {
+    height: 2rem;
+    padding: 0.2rem 0.5rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.take-exam-result-list-item-result {
+    width: 4rem;
+    height: 1.5rem;
+    margin-right: 0.3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    font-weight: 900;
+    font-size: 0.5rem;
+    background-color: #EE9191;
+    color: #FFFDF9;
+    border-radius: 0.5rem;
+}
+
+.correct .take-exam-result-list-item-result {
+    background-color: #94CF86;
+}
+
+.take-exam-result-list-item-time {
+    margin-right: 0.5rem;
+}
+
+.take-exam-result-list-item-detail {
+    color: #e46363;
+}

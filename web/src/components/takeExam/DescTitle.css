@@ -1,0 +1,31 @@
+.take-exam-desc-title {
+    display: flex;
+    align-items: end;
+}
+
+.take-exam-desc-title-name {
+    margin-left: 1.5rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.take-exam-desc-condition {
+    display: flex;
+    margin-left: auto;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.take-exam-desc-condition img {
+    height: 1rem;
+    margin: 0 0.3rem 0 1rem;
+}
+
+.take-exam-condition {
+    display: flex;
+    align-items: center;
+}
+
+.take-exam-desc-hr {
+    border: solid 0.05rem #525252;
+}

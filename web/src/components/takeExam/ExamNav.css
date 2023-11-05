@@ -1,0 +1,12 @@
+.take-exam-nav {
+    width: 5rem;
+    background-color: #FFFDF9;
+    box-shadow: 0rem 0rem 0.3rem 0rem #c8c8c8;
+    position: relative;
+    z-index: 100;
+}
+
+.take-exam-logo {
+    height: 2.4rem;
+    margin: 1rem 0;
+}

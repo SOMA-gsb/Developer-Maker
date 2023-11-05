@@ -1,0 +1,21 @@
+.take-exam-prob-title {
+    height: 4rem;
+    padding: 0 2rem;
+    background-color: #FFFDF9;
+    box-shadow: 0 0 0.3rem 0 #c8c8c8;
+    display: flex;
+    position: relative;
+    align-items: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+    z-index: 90;
+}
+
+.take-exam-title-num {
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2.5rem;
+    margin-right: 1rem;
+    box-shadow: 0 0 0 0.3rem #525252 inset;
+    font-size: 1.3rem;
+}
