@@ -16,13 +16,15 @@ function InputDescription(props) {
     }
 
     const handlePredictClick = () => {
-        console.log(description)
-
+        // console.log(description)
         setFormState('loading')
-        setTimeout(() => {
+    
+        chrome.runtime.sendMessage({ type: 'predict', description: description }, function (response) {
+            props.setTagList(response)
+            
             setFormState('ready')
             props.setSubMenuState('tagLoading')
-        }, 1000)
+        })
     }
 
     const fieldDisalbed = formState === 'loading' ? true : false
