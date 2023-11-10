@@ -27,10 +27,21 @@ input:-webkit-autofill:active {
 input::placeholder {
 	font-size: 1.5rem;
 }
-a,
+
+/* a,
 a:visited,
 a:hover,
 a:active {
 	color: darkblue;
 	font-weight: bold;
+} */
+
+.register-page a, a:visited, a:hover, a:active {
+	color: darkblue;
+	font-weight: bold;
 }
+
+.login-page a, a:visited, a:hover, a:active {
+	color: darkblue;
+	font-weight: bold;
+} 
