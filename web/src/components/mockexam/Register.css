@@ -36,7 +36,13 @@
     margin-right: 0.5rem;
 }
 
-.register-btn {
+.register-btn,
+.start-btn,
+.start-btn:hover,
+.start-btn:focus,
+.start-btn:active,
+.start-btn:visited,
+.start-btn:link  {
     width: 10rem;
     height: 3rem;
     border-radius: 0.7rem;
@@ -47,4 +53,33 @@
     font-weight: bold;
     line-height: 3rem;
     margin-left: auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.register-btn:hover {
+    background-color: #fe8e8e;
+}
+
+.register-btn:active {
+    background-color: #fe8e8e;
+    box-shadow: 0rem 0.1rem 0.1rem 0rem #beb8b8;
+}
+
+.start-btn,
+.start-btn:hover,
+.start-btn:focus,
+.start-btn:active,
+.start-btn:visited,
+.start-btn:link {
+    background-color: #69A5FF;
+}
+
+.start-btn:hover {
+    background-color: #98c1ff;
+}
+
+.start-btn:active {
+    background-color: #98c1ff;
+    box-shadow: 0rem 0.1rem 0.1rem 0rem #beb8b8;
 }

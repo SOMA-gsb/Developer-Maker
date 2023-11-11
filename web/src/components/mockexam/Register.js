@@ -1,7 +1,11 @@
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Details from './Details';
 import './Register.css'
 
 function Register() {
+    const [register, setRegister] = useState(false);    
+
     return (
         <div className="register-wrapper">
             <div className='register-title'>
@@ -11,7 +15,15 @@ function Register() {
                         <b>Level</b> Gray to Blue
                     </div>
                 </div>
-                <div className='register-btn'>REGISTER</div>
+                {register?
+                <Link to="/mockexam/1" className='start-btn'>
+                    Start
+                </Link>
+                :
+                <div className='register-btn' onClick={() => setRegister(true)}>
+                    Register
+                </div>
+                }
             </div>
             <Details />
         </div>
