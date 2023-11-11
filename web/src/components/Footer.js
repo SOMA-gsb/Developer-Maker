@@ -3,6 +3,7 @@ import styled from 'styled-components';
 const FooterContainer = styled.div`
     background-color: #545454;
     padding: 5rem 0 6rem 0;
+    color: #FFFDF9;
 `;
 
 function Footer() {
