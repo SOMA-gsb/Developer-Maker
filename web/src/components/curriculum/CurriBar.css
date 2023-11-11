@@ -16,6 +16,11 @@
     width: 20vw;
 }
 
+.curriculum-bar-back:hover {
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .curriculum-bar-title {
     width: 55vw;
     border-left: 1px solid #B8B8B8;

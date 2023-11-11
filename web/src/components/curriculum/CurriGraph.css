@@ -54,3 +54,35 @@ path, g .currigraph-wrapper {
 .currigraph-rect.lev7 {
     fill: #CBA1FF;
 }
+
+.currigraph-child:hover .currigraph-rect {
+    fill: #faf8f6;
+}
+
+.currigraph-child:hover .currigraph-rect.lev1 {
+    fill: #ffa3a3;
+}
+
+.currigraph-child:hover .currigraph-rect.lev2 {
+    fill: #ffbb96;
+}
+
+.currigraph-child:hover .currigraph-rect.lev3 {
+    fill: #ffe499;
+}
+
+.currigraph-child:hover .currigraph-rect.lev4 {
+    fill: #b8edb2;
+}
+
+.currigraph-child:hover .currigraph-rect.lev5 {
+    fill: #83bcff;
+}
+
+.currigraph-child:hover .currigraph-rect.lev6 {
+    fill: #c3c9ff;
+}
+
+.currigraph-child:hover .currigraph-rect.lev7 {
+    fill: #e1c6ff;
+}
