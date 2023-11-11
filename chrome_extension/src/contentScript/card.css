@@ -276,7 +276,11 @@
     margin-bottom: 0;
 }
 
-.recommend-number {
+.recommend-number, 
+.recommend-number:link, 
+.recommend-number:visited, 
+.recommend-number:active, 
+.recommend-number:hover {
     float: left;
     margin-right: 3px;
     background-color: #FDD56D;

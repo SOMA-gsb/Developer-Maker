@@ -6,7 +6,7 @@ import ResultTitle from '../common/ResultTitle';
 function Result(props) {
     return (
         <li>
-            <a className='recommend-number'><FontAwesomeIcon icon={faLink} className='faLink' />{props.result.number}</a>
+            <a className='recommend-number' href={props.result.ref}><FontAwesomeIcon icon={faLink} className='faLink' />{props.result.number}</a>
             <div>{props.result.title}</div>
             {props.last ? null : <hr className='result-hr' />}
         </li>
@@ -15,10 +15,10 @@ function Result(props) {
 
 function RecommendResult() {
     const [result, setResult] = useState([
-        { title: 'Triangle Platinum?', number: '1847E' },
-        { title: 'Professor Higashikata', number: '1847D' },
-        { title: 'Vampiric Powers?', number: '1847C' },
-        { title: 'Hamon Odyssey', number: '1847B' }
+        { title: 'Triangle Platinum?', number: '1847E', ref: 'https://codeforces.com/problemset/problem/1847/E' },
+        { title: 'Professor Higashikata', number: '1847D', ref: 'https://codeforces.com/problemset/problem/1847/D' },
+        { title: 'Vampiric Powers?', number: '1847C', ref: 'https://codeforces.com/problemset/problem/1847/C' },
+        { title: 'Hamon Odyssey', number: '1847B', ref: 'https://codeforces.com/problemset/problem/1847/B' }
     ])
     
     return (
