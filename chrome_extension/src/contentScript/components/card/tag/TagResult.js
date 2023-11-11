@@ -4,7 +4,7 @@ function Result(props) {
     return (
         <li>
             <div className='result-title'>{props.result}</div>
-            <div className='result-percentage' id={props.first ? 'first-percentage' : ''}>-</div>
+            {/* <div className='result-percentage' id={props.first ? 'first-percentage' : ''}>{props.accuracy}</div> */}
             {props.last ? null : <hr className='result-hr' />}
         </li>
     )
