@@ -25,7 +25,7 @@ function Analysis(props) {
                     <div className="mypage-list-title">Level by Algorithm Tag</div>
                     <div className="mypage-list-btn">upper</div>
                 </div>
-                <List class="analysis-list" type="tagList" heads={props.tagTableHeads} contents={props.algorithmTags} query="" sortType="High Level" />
+                <List class="analysis-list" type="tagList" heads={props.tagTableHeads} contents={props.algorithmTags} query="" sortType="High level" />
             </div>
         </div>
     );
