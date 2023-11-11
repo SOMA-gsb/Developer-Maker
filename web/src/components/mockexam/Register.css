@@ -12,13 +12,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2vw;
+    padding: 2vw 4vw;
     padding-bottom: 1.5vw;
 }
 
 .register-title-contents {
     text-align: left;
-    margin-right: 31.5vw;
 }
 
 .register-maintitle {
@@ -47,4 +46,5 @@
     font-size: 1.3rem;
     font-weight: bold;
     line-height: 3rem;
+    margin-left: auto;
 }
