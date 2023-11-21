@@ -1,0 +1,70 @@
+.exam-code {
+    background-color: #EDE9E2;
+    z-index: 999;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem 0.5rem 1.5rem;
+    min-width: 22rem !important;
+    min-height: 28rem !important;
+    top: calc(100% - 27rem) !important;
+    left: 8rem !important;
+}
+
+.exam-code-title {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    margin-bottom: 0.7rem;
+}
+
+.exam-code-icon {
+    margin-right: 0.5rem;
+    width: 2rem;
+}
+
+.exam-code-exit {
+    margin-left: auto;
+    width: 1.5rem;
+}
+
+.exam-code-search {
+    display: flex;
+    width: 100%;
+}
+
+.exam-code-inputs {
+    margin-bottom: 0.7rem;
+    width: calc(100% - 4.5rem);
+}
+
+.exam-code-search-btn {
+    background-color: #696969;
+    color: #EDE9E2;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    /* margin-left: auto; */
+}
+
+.exam-code-input {
+    background-color: #FFFDF9;
+    /* width: 14.5rem; */
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: left;
+    border-radius: 0.3rem;
+}
+
+.exam-code-input:first-child {
+    margin-bottom: 0.4rem;
+}
+
+.exam-code-result {
+    background-color: #FFFDF9;
+    text-align: left;
+    padding: 0.7rem 1rem;
+    min-height: 17.1rem;
+    height: calc(100% - 9.4rem) !important;
+    border-radius: 0.5rem;
+    overflow: auto;
+}

@@ -4,6 +4,10 @@ import ExamContent from '../components/takeExam/ExamContent';
 import 'react-splitter-layout/lib/index.css';
 import styled from '@emotion/styled';
 
+import { Rnd } from 'react-rnd';
+import './MockExam.css';
+import { noteIcon, deleteIcon } from '../assets/takeExam';
+
 const TakeExamContainer = styled.div`
     display: flex;
     height: 100%;
@@ -34,6 +38,21 @@ function TakeExam() {
                 probResult={probResult}
                 setProbResult={setProbResult}
             />
+            <Rnd className='exam-code' >
+                <div className='exam-code-title'>
+                    <img src={noteIcon} className='exam-code-icon' />
+                    <div>Exam Code</div>
+                    <img src={deleteIcon} className='exam-code-exit' />
+                </div>
+                <div className='exam-code-search'>
+                    <div className='exam-code-inputs'>
+                        <div className='exam-code-input'>Enter Algorithm</div>
+                        <div className='exam-code-input'>Select Language</div>
+                    </div>
+                    <div className='exam-code-search-btn'>Search</div>
+                </div>
+                <div className='exam-code-result'>a = 10</div>
+            </Rnd>
         </TakeExamContainer>
     );
 };

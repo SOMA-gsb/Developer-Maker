@@ -1,3 +1,4 @@
+import deleteIcon from './deleteIcon.png';
 import exitIcon from './exitIcon.png';
 import memoryIcon from './memoryIcon.png';
 import noteIcon from './noteIcon.png';
@@ -8,6 +9,7 @@ import triangleDown from './triangleDown.png';
 import triangleUp from './triangleUp.png';
 
 export {
+    deleteIcon,
     exitIcon,
     memoryIcon,
     noteIcon,
