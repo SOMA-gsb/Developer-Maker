@@ -3,7 +3,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         return false;
     }
     
-    fetch("https://5y32h6k061.execute-api.us-west-2.amazonaws.com/default/tag-predict-mlp", {
+    fetch("http://52.10.124.54:8080/tag", {
         method: "POST",
         body: JSON.stringify({ description: request.description }),
         headers: {
@@ -13,7 +13,11 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         .then(response => response.json())
         .then(json => {
             // console.log(json);
-            sendResponse(json.tag);
+            sendResponse(json.tags);
+        })
+        .catch(err => {
+            console.log(err);
+            sendResponse([]);
         });
 
     return true;
