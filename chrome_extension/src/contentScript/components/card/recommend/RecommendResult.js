@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import ResultTitle from '../common/ResultTitle';
 
+import './RecommendResult.css';
+
 function Result(props) {
     return (
         <li>
@@ -13,7 +15,17 @@ function Result(props) {
     )
 }
 
-function RecommendResult() {
+function Level({ level, rating }) {
+    const state = rating < level ? '' : rating == level ? 'active' : 'completed';
+    
+    return (
+        <div class={`stepper-item ${state} lv${level}`}>
+            <div class="step-counter">{rating == level ? `Lv. ${level}` : ""}</div>
+        </div>
+    )
+}
+
+function RecommendResult({ rating }) {
     const [result, setResult] = useState([
         { title: 'Triangle Platinum?', number: '1847E', ref: 'https://codeforces.com/problemset/problem/1847/E' },
         { title: 'Professor Higashikata', number: '1847D', ref: 'https://codeforces.com/problemset/problem/1847/D' },
@@ -23,6 +35,15 @@ function RecommendResult() {
     
     return (
         <div className='sub-menus result-container recommend-menus'>
+            <ResultTitle boxId='recommend-title-box' titleId='recommend-title-name' title='Predict Problem Level' />
+            <div class="stepper-wrapper">
+                {[1, 2, 3, 4, 5, 6, 7].map((level) => {
+                    return <Level level={level} rating={rating} />
+                })}
+            </div>
+
+            <hr className='recommend-hr' />
+
             <ResultTitle boxId='recommend-title-box' titleId='recommend-title-name' title='Recommended Problems' />
             <ul id='recommend-ul'>
                 {result.map((item, index) => {
