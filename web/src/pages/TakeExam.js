@@ -3,10 +3,7 @@ import ExamNav from '../components/takeExam/ExamNav';
 import ExamContent from '../components/takeExam/ExamContent';
 import 'react-splitter-layout/lib/index.css';
 import styled from '@emotion/styled';
-
-import { Rnd } from 'react-rnd';
-import './MockExam.css';
-import { noteIcon, deleteIcon } from '../assets/takeExam';
+import ExamCode from '../components/takeExam/ExamCode';
 
 const TakeExamContainer = styled.div`
     display: flex;
@@ -16,6 +13,8 @@ const TakeExamContainer = styled.div`
 
 function TakeExam() {
     const [probNum, setProbNum] = useState(1);
+    const [examCodeVisible, setExamCodeVisible] = useState(false);
+    const [codeState, setCodeState] = useState('loading'); // 'loading', 'write', 'result
     const [probResult, setProbResult] = useState({
         1: 0,
         2: 1,
@@ -23,6 +22,7 @@ function TakeExam() {
         4: 0
     }); // 0: not yet, 1: correct, 2: wrong
 
+    
     return (
         <TakeExamContainer>
             <ExamNav 
@@ -30,6 +30,10 @@ function TakeExam() {
                 probNum={probNum}
                 setProbNum={setProbNum}
                 probResult={probResult}
+                setExamCodeVisible={setExamCodeVisible}
+                examCodeVisible={examCodeVisible}
+                setCodeState={setCodeState}
+
             />
             <ExamContent
                 probList={probList}
@@ -38,21 +42,12 @@ function TakeExam() {
                 probResult={probResult}
                 setProbResult={setProbResult}
             />
-            <Rnd className='exam-code' >
-                <div className='exam-code-title'>
-                    <img src={noteIcon} className='exam-code-icon' />
-                    <div>Exam Code</div>
-                    <img src={deleteIcon} className='exam-code-exit' />
-                </div>
-                <div className='exam-code-search'>
-                    <div className='exam-code-inputs'>
-                        <div className='exam-code-input'>Enter Algorithm</div>
-                        <div className='exam-code-input'>Select Language</div>
-                    </div>
-                    <div className='exam-code-search-btn'>Search</div>
-                </div>
-                <div className='exam-code-result'>a = 10</div>
-            </Rnd>
+            <ExamCode
+                setExamCodeVisible={setExamCodeVisible}
+                examCodeVisible={examCodeVisible}
+                codeState={codeState}
+                setCodeState={setCodeState}
+            />
         </TakeExamContainer>
     );
 };

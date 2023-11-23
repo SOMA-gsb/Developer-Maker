@@ -4,7 +4,7 @@ import MenuBtn from "./MenuBtn";
 import MainLogo from '../../assets/mainLogo.png';
 import './ExamNav.css'
 
-function ExamNav({ probList, probNum, setProbNum, probResult }) {
+function ExamNav({ probList, probNum, setProbNum, probResult, setExamCodeVisible, examCodeVisible, setCodeState }) {
     return (
         <div className="take-exam-nav">
             <Link to='/mockexam'>
@@ -16,7 +16,11 @@ function ExamNav({ probList, probNum, setProbNum, probResult }) {
                 setProbNum={setProbNum}
                 probResult={probResult}
             />
-            <MenuBtn />
+            <MenuBtn 
+                setExamCodeVisible={setExamCodeVisible}
+                examCodeVisible={examCodeVisible}
+                setCodeState={setCodeState}
+            />
         </div>
     );
 };
