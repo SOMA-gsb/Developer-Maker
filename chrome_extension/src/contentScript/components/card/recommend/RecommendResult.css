@@ -140,3 +140,38 @@
     margin: -7px -10px 7px -10px;
     width: calc(100% + 20px);
 }
+
+.recommend-levels {
+    clear: both;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.recommend-level {
+    background-color: #FDD56D;
+    width: 7rem;
+    text-align: center;
+    color: #FFFFFF;
+    height: 2rem;
+    border-radius: 0.7rem;
+    line-height: 2rem;
+    box-shadow: 0rem 0.1rem 0.2rem 0rem #545454;
+    cursor: pointer !important;
+}
+
+.recommend-level:nth-child(2) {
+    margin: 0 1rem;
+}
+
+.recommend-level:hover { 
+    background-color: #FFBF1B;
+}
+
+.recommend-level.active {
+    background-color: #FFBF1B;
+}
+
+.recommend-level:active {
+    background-color: #ffb700;
+}
