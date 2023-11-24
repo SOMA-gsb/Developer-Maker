@@ -9,7 +9,7 @@ function List(props) {
     const [tags, setTags] = useState(props.contents);
 
     useEffect(() => {
-        if(props.query != '') {
+        if(props.type != 'examResult') {
             setFilteredTags(tags.filter((content) => {
                 return content.tag.toLowerCase().replace(/ /g, '').includes(props.query.toLowerCase().replace(/ /g, ''));
             }));
