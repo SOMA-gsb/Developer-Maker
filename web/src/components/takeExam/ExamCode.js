@@ -100,7 +100,7 @@ graph = {'A': set(['B', 'C']),
 
 print(bfs(graph, 'A'))  # ['A', 'B', 'C', 'E', 'D', 'F']
 `);
-            setTheory('This is an algorithmic description of the problem. Write a program that outputs A+B after receiving the two integers A and B. I hope you have a great time solving algorithm');
+            setTheory('Breadth-first search (BFS) is an algorithm for searching a tree data structure for a node that satisfies a given property. It starts at the tree root and explores all nodes at the present depth prior to moving on to the nodes at the next depth level. Extra memory, usually a queue, is needed to keep track of the child nodes that were encountered but not yet explored.');
             setCodeState('result');
         }, 1000)
     };
@@ -154,8 +154,8 @@ print(bfs(graph, 'A'))  # ['A', 'B', 'C', 'E', 'D', 'F']
                 }
                 {codeState === 'result' &&
                     <>
-                        &nbsp;{explanation}
-                        <br />
+                        {/* &nbsp;{explanation}
+                        <br /> */}
                         {/* {exampleCode} */}
                         <CopyBlock {...copyBlockProps} />
                         <br />

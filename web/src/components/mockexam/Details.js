@@ -24,7 +24,7 @@ function Details() {
             <div className="exam-details">
                 <DetailElem icon={levelIcon} title="Average Level" value="Green" />
                 <DetailElem icon={scoreIcon} title="Total Score" value="700" />
-                <DetailElem icon={calenderIcon} title="Date Of Mock Exam" value="23.09.10" />
+                <DetailElem icon={calenderIcon} title="Date Of Mock Exam" value="23.11.25" />
             </div>
         </>
     );
